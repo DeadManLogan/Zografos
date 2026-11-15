@@ -17,7 +17,7 @@
 -- Constant-o lines are clean 45-degree pixel lines; the point's edges are
 -- |o| = (t - TIP_T) / 5, which land on clean 3:2 pixel lines.
 local px = dofile("tools/aseprite/lib/pixel.lua")
-local C = px.C
+local C = px.use("herbs_n_spices")
 
 local W, H = 64, 64
 local S0 = 63

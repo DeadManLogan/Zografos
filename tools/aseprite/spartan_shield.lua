@@ -8,7 +8,7 @@
 -- Transformation: stylised front view; lambda exaggerated into a raised
 -- bronze inlay so it reads at 1:1 in the inventory.
 local px = dofile("tools/aseprite/lib/pixel.lua")
-local C = px.C
+local C = px.use("herbs_n_spices")
 
 local W, H = 64, 64
 local CX, CY = 32, 32

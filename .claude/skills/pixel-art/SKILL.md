@@ -8,18 +8,18 @@ description: Draw, revise or review pixel-art sprites with Aseprite (headless Lu
 ## Guides (required reading)
 Before planning any sprite or sprite sheet, **read all four guides in this folder** and apply whichever sections fit the subject:
 - [`lighting-shading.md`](lighting-shading.md): light direction, bell-curve shade distribution, hard vs. soft edges, specular/rim light, shading clustered forms by depth.
-- [`color-ramps.md`](color-ramps.md): hue-shifted ramps from the fixed palette, saturation placement, bridge colours, palette luma table.
+- [`color-ramps.md`](color-ramps.md): hue-shifted ramps from the chosen palette, saturation placement, bridge colours, palette luma table.
 - [`references-and-forms.md`](references-and-forms.md): reference lists and transformation, silhouette → structure → masses → detail, orphan pixels, selective outlines, grass.
 - [`readability-and-contrast.md`](readability-and-contrast.md): signal vs. noise (characters/items vs. terrain), silhouette test, low-contrast detail for ground tiles, top-down rules, style consistency.
 
 Each guide ends with a checklist. Step 5's critique must go through every applicable checklist item.
 
 ## Workflow
-1. **Plan before pixels.** Write down: canvas size, role (`signal` or `ground`, see `readability-and-contrast.md`), silhouette (width of the shape per row), light direction, the 3–5 palette ramps you will use (from `color-ramps.md`), the references with the attribute taken from each plus the transformation (`references-and-forms.md`), and what makes the object *recognisable* at 1:1 (e.g. amphora = narrow neck + two handles + egg body + foot).
+1. **Plan before pixels.** Write down: the palette (`palettes/<id>.gpl`, chosen for the piece's mood; default `herbs_n_spices`), canvas size, role (`signal` or `ground`, see `readability-and-contrast.md`), silhouette (width of the shape per row), light direction, the 3–5 palette ramps you will use (from `color-ramps.md`), the references with the attribute taken from each plus the transformation (`references-and-forms.md`), and what makes the object *recognisable* at 1:1 (e.g. amphora = narrow neck + two handles + egg body + foot).
 2. **Write the script** `tools/aseprite/<name>.lua` as a character grid (one string per row, `.` = transparent) plus a legend mapping chars to palette names, and call the shared helper:
    ```lua
    local px = dofile("tools/aseprite/lib/pixel.lua")
-   local C = px.C
+   local C = px.use("herbs_n_spices")  -- palettes/<id>.gpl; returns colour name -> hex
    local legend = { K = C.plum_dark, O = C.ochre }
    local rows = { "....KK....", ... }
    px.build("<name>", rows, legend)   -- -> assets/sprites/<name>.aseprite/.png + previews/<name>_preview.png
@@ -32,13 +32,13 @@ Each guide ends with a checklist. Step 5's critique must go through every applic
 3. **Run it synchronously** from the repo root (PowerShell):
    `& "C:\Program Files\Aseprite\Aseprite.exe" -b --script tools/aseprite/<name>.lua | Out-Null`
    Aseprite.exe is a GUI-subsystem app: without `| Out-Null` (or `Start-Process -Wait`) PowerShell returns *before* the files are written and you will review a stale image. `print()` output is not shown in batch mode.
-4. **Review** `previews/<name>_preview.png` with the Read tool. It shows a zoom on a checkerboard, a 4x copy, and 1:1 copies on mid (slate), light (bone) and dark (ink) backgrounds. Judge the 1:1 copies first: is the silhouette readable on all three? For the bell-curve check, read `previews/<name>_stats.txt` (pixels and % per palette colour).
+4. **Review** `previews/<name>_preview.png` with the Read tool. It shows a zoom on a checkerboard, a 4x copy, and 1:1 copies on the palette's mid-brightness, lightest and darkest colours (slate, bone and ink for Herbs n Spices). Judge the 1:1 copies first: is the silhouette readable on all three? For the bell-curve check, read `previews/<name>_stats.txt` (palette id, then pixels and % per palette colour).
 5. **Critique in writing, then revise.** Go through the guide checklists, then list concrete problems with row/column refs, fix them, re-render. Do at least one improvement pass (more if asked). To keep versions for comparison, copy the preview to `previews/<name>_vN.png`.
 
 ## Art rules
-- **Palette only.** Use `px.C.<name>` (names in `lib/pixel.lua`). Never invent hex values.
+- **One palette per sprite, palette only.** Use the names from the chosen `palettes/<id>.gpl` via `C.<name>`, where `C = px.use("<id>")`. Unnamed colours are `C.c01`, `C.c02`, … in file order. Never invent hex values.
 - **Silhouette first.** Get the outline shape right before shading. Proportions sell the object: exaggerate the defining feature (an amphora's neck is taller and narrower than you'd think).
-- **Outline:** 1px, using `plum_dark` (#39202e) rather than pure black, so `ink` (#17111a) stays available for black-figure/glaze details. Dark areas may merge with the outline; that's fine.
+- **Outline:** 1px, using a dark, slightly coloured tone rather than the palette's darkest colour (Herbs n Spices: `plum_dark` #39202e, keeping `ink` #17111a free for black-figure/glaze details). Dark areas may merge with the outline; that's fine.
 - **Light from the top-left.** Each material gets a ramp of highlight → base → shade → deep shade. Put highlights a pixel *inside* the left edge, not on it; put the darkest shade on the right edge and the underside.
 - **Curved highlights.** On round forms, step the highlight diagonally (an arc), not as a straight vertical stripe.
 - **No pillow shading** (shade following the outline on every side equally).
@@ -64,7 +64,8 @@ Every frame and every sprite on a sheet must share the same rules: one light dir
 
 ## Files
 - `.claude/skills/pixel-art/*.md`: this skill and its guides.
-- `tools/aseprite/lib/pixel.lua`: palette, grid → sprite, save, preview.
+- `palettes/<id>.gpl`: one palette per file (see `palettes/README.md`).
+- `tools/aseprite/lib/pixel.lua`: palette loading (`px.use`, `px.list`), grid → sprite, save, preview.
 - `tools/aseprite/<name>.lua`: one script per sprite.
 - `assets/sprites/`: deliverables (`.aseprite` + `.png`).
 - `previews/`: review images (git-ignored).

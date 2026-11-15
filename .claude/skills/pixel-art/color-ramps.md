@@ -1,7 +1,9 @@
 # Colour & ramps (fixed palette)
 
 Source: Adam C. Younis, "Palettes & Colours" (transcript in `.claude/youtube_transcribs/adamcyounis/pixel_art_class/`).
-The video is about *building* a palette. This project's palette is fixed (Herbs n Spices, 16 colours, see CLAUDE.md), so the rules below are adapted to *choosing ramps from it*. Read this when picking ramps (workflow step 1).
+The video is about *building* a palette. Here each sprite uses one fixed palette from `palettes/`, so the rules below are adapted to *choosing ramps from it*. Read this when picking ramps (workflow step 1).
+
+The principles apply to every palette. The brightness table and ramp table below are for the default palette, **Herbs n Spices** (`palettes/herbs_n_spices.gpl`). When a sprite uses another palette for the first time, add the same two tables for it in a new section here (luma = 0.299 R + 0.587 G + 0.114 B, scaled to 0–100).
 
 ## Principles from the video
 - **A palette can't cover the whole spectrum.** Every choice is about expressing what you need without adding colours. Never add a colour. Work within the 16.
@@ -14,7 +16,7 @@ The video is about *building* a palette. This project's palette is fixed (Herbs 
 - **Check value steps by eye.** Neighbouring shades in a ramp should differ by a similar, visible amount. If two shades are nearly identical, use only one. If two neighbours are far apart, that seam becomes a hard edge (see `lighting-shading.md`).
 - **Two colours with the same job is waste.** Each colour in a sprite should have a distinct role.
 
-## The project palette by brightness
+## Herbs n Spices by brightness
 Luma = perceived brightness (0–100), computed from the hex values.
 
 | name | hex | hue | sat | luma | role |

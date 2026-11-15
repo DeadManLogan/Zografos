@@ -1,6 +1,6 @@
 -- 16x16 Greek amphora (black-figure style), v1
 local px = dofile("tools/aseprite/lib/pixel.lua")
-local C = px.C
+local C = px.use("herbs_n_spices")
 
 local legend = {
   K = C.plum_dark,  -- outline

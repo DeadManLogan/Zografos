@@ -1,36 +1,29 @@
 -- Shared helpers for Zografos sprite scripts.
 -- Load from a sprite script (run from the repo root):
 --   local px = dofile("tools/aseprite/lib/pixel.lua")
+--   local C  = px.use("herbs_n_spices")   -- palettes/<id>.gpl
 
 local M = {}
 
--- Herbs n Spices palette (project palette). Index order matters: it is
--- written into every sprite's palette in this order.
-M.PALETTE = {
-  { name = "umber",      hex = "#593a31" },
-  { name = "plum_dark",  hex = "#39202e" },
-  { name = "wine",       hex = "#613140" },
-  { name = "terracotta", hex = "#83443e" },
-  { name = "ochre",      hex = "#c98d3f" },
-  { name = "sand",       hex = "#dac282" },
-  { name = "olive",      hex = "#9a945c" },
-  { name = "moss_grey",  hex = "#6b6657" },
-  { name = "slate_dark", hex = "#384150" },
-  { name = "slate",      hex = "#6e7e8d" },
-  { name = "sky",        hex = "#90b5c6" },
-  { name = "bone",       hex = "#f5efe8" },
-  { name = "mauve",      hex = "#ab99a4" },
-  { name = "dusk",       hex = "#55516f" },
-  { name = "aubergine",  hex = "#463554" },
-  { name = "ink",        hex = "#17111a" },
-}
+-- Palettes live in palettes/<id>.gpl (GIMP palette format), see
+-- palettes/README.md. Pick one per sprite script with px.use("<id>").
+M.PALETTE_DIR = "palettes"
+M.DEFAULT = "herbs_n_spices"
 
-M.C = {} -- name -> hex
-for _, e in ipairs(M.PALETTE) do M.C[e.name] = e.hex end
+-- The active palette. Filled by M.use(). Index order matters: it is written
+-- into every sprite's palette in this order.
+M.PALETTE_ID = nil
+M.PALETTE = {}  -- array of { name = "ochre", hex = "#c98d3f" }
+M.C = {}        -- name -> hex (also index -> hex, so C[5] works)
 
 local function hexToRGB(hex)
   hex = hex:gsub("#", "")
   return tonumber(hex:sub(1, 2), 16), tonumber(hex:sub(3, 4), 16), tonumber(hex:sub(5, 6), 16)
+end
+
+local function luma(hex)
+  local r, g, b = hexToRGB(hex)
+  return 0.299 * r + 0.587 * g + 0.114 * b
 end
 
 local function inPalette(hex)
@@ -48,6 +41,78 @@ local function abs(path)
   return app.fs.joinPath(app.fs.currentPath, path)
 end
 
+-- Ids of all palettes in palettes/, sorted.
+function M.list()
+  local ids = {}
+  for _, f in ipairs(app.fs.listFiles(abs(M.PALETTE_DIR))) do
+    local id = f:match("^(.+)%.gpl$")
+    if id then ids[#ids + 1] = id end
+  end
+  table.sort(ids)
+  return ids
+end
+
+-- Parse a .gpl file into { {name=, hex=}, ... }.
+local function loadGpl(path)
+  local f = io.open(path, "r")
+  if not f then
+    error(("palette file not found: %s (available: %s)"):format(path, table.concat(M.list(), ", ")))
+  end
+  local entries, seen, n = {}, {}, 0
+  for line in f:lines() do
+    line = line:gsub("\r$", "")
+    local r, g, b, name = line:match("^%s*(%d+)%s+(%d+)%s+(%d+)%s*(.-)%s*$")
+    if r and not line:match("^%s*#") then
+      n = n + 1
+      r, g, b = tonumber(r), tonumber(g), tonumber(b)
+      assert(r <= 255 and g <= 255 and b <= 255, ("%s: colour %d out of range: %s"):format(path, n, line))
+      name = name:lower():gsub("%s+", "_")
+      -- unnamed, or named by its own hex code (Lospec exports) -> c01, c02...
+      if name == "" or name == "untitled" or name:match("^#?%x%x%x%x%x%x$") then
+        name = ("c%02d"):format(n)
+      end
+      assert(not seen[name], ("%s: duplicate colour name '%s'"):format(path, name))
+      seen[name] = true
+      entries[#entries + 1] = { name = name, hex = ("#%02x%02x%02x"):format(r, g, b) }
+    end
+  end
+  f:close()
+  assert(#entries > 0, path .. ": no colours found")
+  assert(#entries <= 256, path .. ": more than 256 colours")
+  return entries
+end
+
+-- Make palettes/<id>.gpl the active palette and return M.C (name -> hex).
+-- M.PALETTE and M.C are refilled in place, so older references stay valid.
+function M.use(id)
+  id = id or M.DEFAULT
+  local entries = loadGpl(abs(app.fs.joinPath(M.PALETTE_DIR, id .. ".gpl")))
+  for k in pairs(M.PALETTE) do M.PALETTE[k] = nil end
+  for k in pairs(M.C) do M.C[k] = nil end
+  for i, e in ipairs(entries) do
+    M.PALETTE[i] = e
+    M.C[e.name] = e.hex
+    M.C[i] = e.hex
+  end
+  M.PALETTE_ID = id
+  return M.C
+end
+
+-- Preview backgrounds for the active palette: darkest, lightest, and the
+-- colour closest to mid-grey brightness.
+local function backgrounds()
+  local dark, light, mid = M.PALETTE[1].hex, M.PALETTE[1].hex, M.PALETTE[1].hex
+  for _, e in ipairs(M.PALETTE) do
+    local l = luma(e.hex)
+    if l < luma(dark) then dark = e.hex end
+    if l > luma(light) then light = e.hex end
+    if math.abs(l - 128) < math.abs(luma(mid) - 128) then mid = e.hex end
+  end
+  return mid, light, dark
+end
+
+M.use(M.DEFAULT)
+
 -- Validate a grid + legend. Errors loudly so mistakes never get exported.
 local function validate(rows, legend, w, h)
   assert(#rows == h, ("grid has %d rows, expected %d"):format(#rows, h))
@@ -59,7 +124,7 @@ local function validate(rows, legend, w, h)
     end
   end
   for ch, hex in pairs(legend) do
-    assert(inPalette(hex), ("legend '%s' = %s is not in the project palette"):format(ch, hex))
+    assert(inPalette(hex), ("legend '%s' = %s is not in palette '%s'"):format(ch, hex, M.PALETTE_ID))
   end
 end
 
@@ -151,12 +216,12 @@ function M.preview(spr, path, scale)
   local H = math.max(h * scale, h * smallScale) + pad * 2
   local out = Image(W, H, ColorMode.RGB)
   local pc = app.pixelColor
-  local bgR, bgG, bgB = hexToRGB(M.C.slate)
-  local bg = pc.rgba(bgR, bgG, bgB, 255)
+  local function solid(hex) local r, g, b = hexToRGB(hex) return pc.rgba(r, g, b, 255) end
+  local midHex, lightHex, darkHex = backgrounds()
+  local bg = solid(midHex)
   out:clear(bg)
 
   local c1, c2 = pc.rgba(200, 200, 200, 255), pc.rgba(150, 150, 150, 255)
-  local function solid(hex) local r, g, b = hexToRGB(hex) return pc.rgba(r, g, b, 255) end
   -- back: nil = checkerboard, otherwise a solid pixel colour
   local function blit(ox, oy, s, back)
     for y = 0, h - 1 do
@@ -181,10 +246,10 @@ function M.preview(spr, path, scale)
   end
   blit(pad, pad, scale, nil)
   blit(pad * 2 + w * scale, pad, smallScale, bg)
-  -- 1:1 copies on mid (slate), light (bone) and dark (ink) backgrounds:
+  -- 1:1 copies on the palette's mid, lightest and darkest colours:
   -- the sprite must stay readable on all three.
   local x1 = pad * 3 + w * scale + w * smallScale
-  local tiles = { bg, solid(M.C.bone), solid(M.C.ink) }
+  local tiles = { bg, solid(lightHex), solid(darkHex) }
   for i, back in ipairs(tiles) do
     local oy = pad + (i - 1) * (h + pad)
     if oy + h <= H then
@@ -216,7 +281,7 @@ function M.stats(spr, path)
       end
     end
   end
-  local lines = {}
+  local lines = { "palette " .. M.PALETTE_ID }
   for _, e in ipairs(M.PALETTE) do
     local n = counts[e.hex]
     if n then lines[#lines + 1] = ("%-11s %s %5d  %5.1f%%"):format(e.name, e.hex, n, 100 * n / total) end
