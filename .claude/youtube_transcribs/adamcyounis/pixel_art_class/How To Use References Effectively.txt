@@ -1,0 +1,751 @@
+Intro
+not my usual style but you know we're
+looking at this outlines here i thought
+they looked good
+give them a try and uh yeah they came up
+a treat really nice
+[Music]
+if you love indie tales be sure to
+subscribe here and on twitch where i'm
+live most weekdays
+you can also show your support through
+patreon or on itch.io where i upload
+assets and games shown on the channel
+hey pals welcome to a new video today we
+are going to be covering
+references and using references to
+create pixel art i wanted to cover how i
+use references
+and the way that you should be using
+them to create original work
+without looking too derivative so let's
+get straight into it
+Using References
+so the first question is what is a
+reference or what does it mean to
+reference
+a reference is the application of some
+aspect of existing material
+into your work now that
+existing material can be a picture it
+can be something
+from the real world or it could be
+indeed somebody else's work
+so many of you are now thinking okay but
+doesn't that make my work less creative
+doesn't that make me less original
+something that's taught to new artists
+is that nothing is truly original
+everything exists in proximity to other
+things and
+in fact when utilizing somebody else's
+work or something from the real world
+in your work you create what's called a
+derivative and the thing that makes
+something more original
+versus being theft is transformation
+so what is transformation transformation
+is changing an aspect of a composition
+or structure note that we use the word
+aspect when describing what a reference
+is
+so the thing that you reference that
+aspect
+if you change it in some way that is
+transformative and legally we use that
+word to differentiate between
+things that infringe copyright and
+things that don't so even in the legal
+sense this is
+how we think of what is original and
+what contributes
+uh to value in the art space versus
+something that is
+purely derivative or theft i like to
+think of transformation as something
+that is
+at its heart geometric so in this
+instance here we have a square
+and to transform that square means
+actually taking properties of it and
+changing them
+so we can do things like rotate the
+square
+we can stretch it or elongate it we can
+add more faces to the square
+we can extrude the square into a third
+dimension to make it a cube
+these are all transformations and they
+alter
+the output or the thing that we create
+to be more original
+or different beyond just changing
+individual properties of a
+thing that you're deriving from you can
+also merge multiple different things
+so you can refer to multiple different
+references at once when you're creating
+your work
+and layer them transform them in unique
+ways
+so you can simply add them on top of
+each other you can
+you know take half of one thing and half
+of another and merge them you can layer
+them
+you can take certain properties and you
+know apply them to each other
+so obviously there are infinite ways you
+can transform work
+but this is a nice way of thinking about
+you know how to at least formally
+you know describe and define what it
+means to transform something
+in the art world transformation can look
+like this this is kind of like
+merging two shapes right we have mona
+lisa we have lisa simpson
+simply pushing them together creates
+mona lisa simpson we have the
+composition
+of the mona lisa we have the art style
+and the character from
+you know the simpsons there's our
+derivative work
+an example that's been going around
+twitter uh more recently
+is this lovely interpretation of
+watercolor trees
+in pixel art by frenric so you can see
+right we have a tree we have the
+technique of watercolor
+and we have the rules of pixel art that
+bind
+you know of the pixel artwork and we
+have this is the result
+right what we have is an original
+composition that is technically
+impressive
+the the transformation is broad right
+we're transforming
+themes and ideas in a new way
+right so this is like a really really
+great example of how to use references
+or at least how to take concepts that
+exist in the world
+you know trees watercolor pixel art
+and to merge them in a way that is
+transformative and original
+so when using a reference try to think
+about how you can
+make something original by contributing
+creative transformation
+the transformations are your way of
+adding creativity
+to it and adding originality so given
+all that when i'm working
+with references i usually grab a
+multitude of different images and i
+create a collage out of them
+that helps me stay unfocused right and
+not to tunnel vision on one particular
+image so that i'm not copying it
+directly if that's an issue that you
+have you know this will resolve that
+and i like to pick when i'm making that
+collage
+images that aren't necessarily what i'm
+trying to make
+right i'm not exactly trying to find a
+picture that is what i'm trying to make
+and to make that directly
+instead i'm trying to pick things that
+have the attributes
+that i'm imagining in my head right so i
+like the silhouette of this tree
+i think this is an interesting place to
+start with technique for applying
+this to pixel art i like the color of
+this tree
+i like the shading on this one and the
+lighting of this one
+you know this is you know a painted
+version so maybe there's some lessons
+that i can learn
+on some technique that's here maybe i
+want my tree to look more painterly
+even though it's pixel art right so
+there are ways that you can
+you know by creating this collage here
+take
+bits and pieces right and
+merge them in an original way to make
+something
+that is uh yeah creative and your own
+right it's not just
+a copy so now that we've discussed
+using references uh let's make something
+let's make a tree
+Tree Structure
+okay so let's get into it i'm going to
+keep
+the reference on the right here and i'm
+going to be working on the left and i'm
+going to try not to zoom and scroll too
+much
+so we'll see how well that that turns
+out the first thing is a silhouette
+let's uh just block it in with any color
+i'm just going to take this dark brown
+here that's red
+and just fill out the silhouette and i'm
+not going to copy directly i'm just
+going to create something that's you
+know
+evokes the same sort of thing so i like
+this idea of it leaning
+one way and another and my goal is to
+really have
+something that tapers as we move forward
+so
+we want the the limbs to get smaller as
+they fork and split
+and that's that's basically how trees
+work in real life note that we are
+creating a 2d tree
+in uh you know from a 3d reference
+you need to take into account branches
+that are facing the camera it might be a
+bit difficult to
+to do at this stage but if you look at
+this you know it's a 2d image so you can
+kind of just ignore that for now but
+when we shade we're definitely going to
+be trying to think about that a little
+bit more
+you know thinking about things like
+branches crossing over would be a good
+example of taking into account that 3d
+aspect and i really like the way that
+this is sort of more crooked to
+i like that it's not just one straight
+stump that goes all the way up and i
+want to just make sure it looks nice too
+so just aesthetically you know if we can
+follow a line
+you know all the way up that helps a lot
+now i'm
+starting out with kind of like the
+branch system of the tree so that i
+have the structure looking you know
+reasonably well balanced
+at the start this is kind of like
+drawing a skeleton of the tree really
+we don't have any leaves yet okay that's
+pretty good
+there's a little bit of an issue here
+where this goes a bit too
+thin too late you can really see it
+right if if um
+if it's too thick further up it's like
+okay
+that looks like it's wonky looks
+lopsided so i'm just thinking about
+these
+um clumps that i'm gonna be adding and
+how i want them to
+be formed and i suppose green's fine for
+now for our
+next layer up so i'm going to add a new
+Blocking Leaves
+layer and i'm just going to start
+clumping these down
+and the goal is to really try to create
+uh a sense of volume without completely
+erasing all of the the branches right
+you don't want to
+not be able to see the branches at all
+and i think what's really important here
+is like i'm using a brush size if we
+darken this off a little
+that's you know this big relative to the
+tree but if you look at these
+clumps right the clumps are quite a lot
+bigger
+than this relative to you know the size
+of the stump
+so it can be helpful you know if you
+want to like
+really replicate what's there to use
+like a bigger brush for this exercise
+just to make sure that the the global
+shapes those big shapes
+are being represented you can go back
+and erase as well that works too
+but it's it's good if you have these big
+structures um that make these
+almost like mini silhouettes right of
+your bunches so that you can at least
+work with them and cut away from them
+and that the remnants of how you created
+it are still
+visible right you can still kind of see
+how it was created
+just helps make that um make it look
+more natural now you can
+you can sort of lower the opacity of
+this to see the branches underneath if
+you want to like show off some of that
+structure
+and you just don't want to guess your
+way around
+uh you can just yeah try to
+come through here and um it'll also give
+you a good indication of where
+the leaves should be relative to the
+branches anyway so you have some sort of
+understanding of the the circulatory
+system of the tree
+what i'm going to start doing is
+thinking about how i can break up this
+into
+what looks like smaller leaves right
+obviously this isn't like a smooth line
+here we can see that there's like breaks
+in it
+so i'm going to start adding some of
+those breaks in and then i'm going to
+basically trick the eye into thinking
+that these
+shapes these little you know
+inconsistent single pixel sized shapes
+were used to make the entire thing right
+i'm going to make it look like
+there was some sort of you know brush
+that was used to create this and that's
+how i
+achieve that kind of more painterly
+effect so for now that we can just do
+that by cutting into the shape
+keeping in mind that that old lesson
+that i gave
+about trying to use small shapes to
+inform
+the bigger shapes right so if you've
+seen
+one iteration of a detail you will
+assume that that
+detail applies everywhere i'm going to
+brighten this up a little bit because i
+want to see a background
+so we'll add a blue
+and i want to brighten up this a little
+bit
+just to give us our base color now i'm
+going to go back to the shade brush
+and so i'm going to grab the colors that
+i want to use and i'm going to just
+press
+my shade button here and that's going to
+give me the
+the ideas that i want in fact i'm only
+just going to use two shades right now
+so i'm going to take this
+and the shade below it and that's going
+to help me build out these clumps
+Shading the Leaves
+so as i'm looking at this i'm just
+thinking about how the lighting is
+actually going to be applied and i'm
+thinking about which parts are lit up
+right it's not really like left versus
+right i mean there's a little bit of
+darker space
+on the inside but that's really looking
+through the tree
+into the branches that are sort of
+obscured by the
+by the rest of the branches when looking
+at the sun so these are sort of
+in shadow and that's where they're
+darker not because they are on the left
+side or the right side or higher up or
+lower down
+so we're not just going to sit here and
+shade you know along the bottom and say
+that's that's where the light touches
+and that's where the light doesn't touch
+because it's not one object right it's
+it's lots and lots of objects
+you know layered on top of each other so
+at best we can kind of think of these
+clumps as you know
+smaller objects and we can start shading
+them a little bit but i'm just going to
+try to
+scatter out some darker shapes
+everywhere and then put lighter shapes
+on top of those darker shapes
+so i'm just trying to think about you
+know what's closer to the camera what's
+closer to the outside of the tree
+versus the inside and that depth is
+going to
+dictate what gets lit up and what
+doesn't so and as i refine this i'm
+really just looking at the
+the shapes of my shapes right the shapes
+of these shadows and thinking about like
+okay what do these individual pixels
+look like right like
+this section over here is a little wonky
+so how do i
+flatten that out i'm kind of thinking of
+the
+clumps as being sort of oval shaped
+and i'm just trying to emphasize those
+i'm also thinking about
+the bright shapes casting shadows on the
+shapes below them
+so this section here is casting a shadow
+down onto this
+what's important is that you have some
+kind of rule if you have a rule that
+you're following
+the rule will appear to flow naturally
+across the image
+if you don't have a rule it's going to
+just look like you had random
+stuff happening everywhere yeah and
+trees themselves
+all follow different different rules
+right there are different species of
+trees that have different
+shaped bushes and branches and the
+lighting is therefore different across
+all of them so
+it's not really a question of like doing
+it right or wrong
+i'm sure you can find examples of trees
+that look you know really wild and have
+very very different appearances
+so we just want to also make sure that
+we're not losing the
+the unique shape of the tree
+so you know does this you know look like
+the tree that we started with
+is it overall is the silhouette looking
+good
+you know we can do what we want with it
+if we
+want to give it some more varied shape
+here and
+make it a bit more lopsided so it looks
+like when analyzing this tree
+you know what really stands out to me
+are these very bright sections
+that are backed by very dark sections
+right these high contrast areas that
+as we look at the sort of rounding as
+this sort of like rolls forward
+our eyes are about here right so this is
+kind of above us
+and we can see the branches facing the
+sun and then as they face us
+the contrast looks like it's a little
+higher and so we can try to like emulate
+that by highlighting the base of
+the clumps at the bottom of the base of
+the clumps that are
+towards the middle and i've sort of even
+started doing that here you can see
+so you know maybe some of this and this
+and also i just want to take this
+opportunity to just highlight the
+outside as well for sure
+so at the very top we're going to see a
+lot of light and then we're going to
+come
+very very very sparing as we approach
+the
+parts down here and now is our
+opportunity to work in some of those
+shapes that we want to use to
+emulate you know the brush so let's
+clean it up a little
+and i'm just going to throw in some of
+these shapes towards the bottom
+to give us the impression of there being
+you know if this
+light shade is at the contrast point
+between this and this then maybe this
+would be the contrast point between this
+and
+you know the darkest color
+so i'm just throwing in these little
+soft shapes here to give us the
+impression of
+you know just leaves that are peeking
+out from underneath
+so we're trying to do here is you know
+keep the big shapes
+and add smaller shapes to the edges and
+that way
+if we have you know rather than creating
+smaller shapes that cross over into the
+big shapes
+that destroys the big shapes right so if
+we keep them separate
+then the structure is there at those
+different levels right we see the
+overall silhouette we see the clumps
+and we see the little details inside i
+like really mixing up the background
+color just to see
+you know what this thing looks like at
+different uh
+different levels of contrast okay and
+i'm actually just going to do a little
+more highlights here
+just to go that one step further and be
+very very sparing with these
+these are sort of leaves that are
+catching direct sunlight
+the next thing i want to do is do some
+shading on the trunk
+Shading the Trunk
+so i'm going to take this as a reference
+because i really like the way that the
+trunk
+that's exposed to the sun is brighter
+than the trunk that
+is uh or the branches that are further
+in the structure
+i really like that idea so you know
+obviously we can take this and start
+darkening this up
+and straight away you can see that looks
+so much more clear now that the branches
+are creating shadow
+that's darkening the inside here very
+similar to this
+and so i want to give the impression
+that the sunlight is
+both coming through this so you get
+little bits here that are lit up
+right right along the top of these logs
+these branches
+and maybe there's being shadow the
+shadow being cast you know on this side
+not exclusively right we still see bits
+peeking out the other side
+but if anywhere is going to be dark it's
+going to be this bit close to the bottom
+we do have an opportunity to create
+texture here
+so we can get really really close to it
+and just work on creating the sense
+of bark you can see these these sort of
+little rips
+all right coming up through here this is
+like texture
+in the trunk itself
+we can start emulating that here i do
+want to see a little bit more of that
+original
+set of uh shapes coming underneath so
+i'm going to try to just
+invade this a little bit and show some
+more
+and i want to show you know the branch
+up against light
+so that we can see that in contrast
+that's looking really good now
+wow and we can add another shade
+brighter on this
+just on the edge here and here
+and very select places and that'll give
+us that sense of
+okay some of that light is coming
+straight down and hitting this part of
+the
+of the tree i think i might work it back
+a little bit some of these
+darker shapes are a little high contrast
+Polishing the Silhouette
+yeah i just want to create an overall
+more
+solid flat area of this middle green in
+the top middle section
+just to create more form for it so you
+can really see clearly
+we've got kind of like this section
+this section this section and this
+section has like four distinct
+kind of regions and we can give this
+sort of one
+set of shading right where it's darker
+underneath and then this is sort of
+coming out the side and that's
+kind of replicating the fact that we've
+got these
+one two three four major branch
+structures
+right so it was there in the original
+and i'm just trying to bring it back
+it's always good to step back and come
+back to the original and say okay what
+am i what have i lost
+along the way i just want to tidy up
+some of these orphan pixels anyway you
+see one pixel just on its own doing
+nothing
+you kind of want to be a little careful
+you know if it's not contributing
+anything to the shape it can be a bit
+distracting to see
+those so again just making sure it looks
+good on light backgrounds and dark
+backgrounds at the moment i'm feeling
+quite happy with it actually again some
+of these orphan pixels are there just
+breaking up the picture a little bit too
+much
+so there we have it we have the
+silhouette of this one
+right or something similar again not
+direct not exact it's not supposed to be
+we have a lot more of the lighting
+technique from this tree
+and this tree i didn't want to stick too
+Adding an Outline
+close to this art style because i
+uh we can i mean we could give it an
+outline if we really wanted to
+i usually wouldn't go for that but uh if
+we go for something like
+i think this brown really works or a
+darker green it could be really cool
+that's quite nice i like it actually
+and then we could do the same thing for
+the this here
+now since we are doing this with the
+outline what i think i'll do is just
+brighten it up on the areas where it's
+uh you know quite bright and then darken
+it in the areas where it should be
+darker
+and it's going to look just a little
+more professional not my usual style but
+you know we're looking at this outlines
+here i thought they looked good
+give them a try and uh yeah they came up
+a treat
+really nice works well with this style
+almost evokes that watercolor look
+that we were seeing earlier do you know
+the only thing that i think got ruined
+in that
+mix was the fact that we got now all
+these little orphan pixels
+peeking through so what i might do is
+just
+erase a little bit further around here
+i'm just trying to i'm just looking at
+the amount of
+white space here and saying okay can i
+introduce some more white space towards
+the bottom
+to give us back some of the shape
+okay i think we're pretty much there wow
+that turned out really nice okay since
+we've come this far
+how about we draw some some grass
+Adding Grass
+so uh should be pretty straightforward
+here
+basically just doing what i always do
+with my grass
+i'm just going to take this area here
+and create a little bit more light
+remember the trees creating some shadow
+i'm sort of just pretending that i know
+what the tree looks like from this angle
+with the shadow you know just creating
+some broken shapes here to make it
+look like the tree is casting shadow on
+the ground
+i'm just going to create some nice grass
+shapes first
+very simple i'm keeping this piece quite
+low res for you guys
+just so that you can have something to
+um
+yeah follow along with for yeah more
+beginner pixel artists because i know a
+lot of my content's
+pretty advanced and i thought maybe
+it would be nice to not go quite so
+hardcore for once
+maybe we'll go even lower res next time
+and maybe we'll outline the grass as
+well
+maybe and what i like which i see a lot
+these days
+is when i'm looking at top down pixel
+art
+you'll find there's this really common
+thing this very common idea
+where you'll see like patches of like
+grass being raised and lowered
+and they sort of have their own shading
+i think i'll do something similar to
+that here
+where i'll take i'll take like a section
+and i'll outline it and everything
+as if it's its own zed layer see if that
+works
+i think it did
+i think i'll keep it minimal the shadow
+it's taking away too much i think from
+the piece
+um quite nice i wonder if i just
+pop up some shapes here if this will
+look like grass that's
+it will great
+like grass that's just sort of a bit not
+as bright
+we're sort of creating the grass with
+the outline
+i like it a lot let's give the uh the
+grass a little bit more of a shine
+a bit of a shimmer so there you go
+Outro
+a tree in pixel art using some
+references that i collected online
+i hope you took the opportunity to
+follow along with me
+and create your own tree or your own art
+using some references that you were
+interested in
+and i hope you gained a little bit of
+confidence using references
+if you have any questions about
+references or drawing trees
+or if you'd like to see me draw some
+more stuff in this style and create some
+sort of asset pack
+you're more than welcome to do so in the
+comments below thank you for watching
+see ya hey pal thanks for watching
+and thanks most especially to the
+patrons and twitch subs who support this
+channel and my gamedev project insignia
+to find out more click the links in the
+description below and
+if you like this video tell youtube by
+clicking the like button and then
+youtube will tell me
+and then i'll make more videos that's
+nice
+thanks again and until next time

@@ -1,0 +1,349 @@
+Introduction
+it's important to understand that saturation is a tool right more color brighter color isn't always better
+[Music] so you guys want to know about pallets
+I'll tell you everything I know all right so the first thing that you
+want to know about my pallets is I make them myself I've currently made a pallet
+for the three games that I've been working on since I started doing a lot of pixel art so Insignia contraband and
+Apollo all have their own palettes and I basically make them from scratch as I'm
+coming up with a concept to the game the most important thing I can say about palettes before we get started is that
+creativity is you know born out of limitations well pallets are kind of like that the
+point is that you don't have access to the whole spectrum so you'll never be able to communicate every single color
+with that said you're basically trying to pick a series of colors that you can
+express what you want to express or what makes sense to express for your game there is a really awesome thread on the
+pickle joint forums that I love to post here and it is basically the coloring I
+don't get a thread from pixel joint I will paste the link for this in the description for those of you who can see
+it in my video here it's it's right there so when we look at this a palette
+today really comes down to an artistic choice right it's not always about limitations pixel art does have that Oh
+Marge aspect to it it will always have an aspect of trying to pay respects to a time when they wear limitations but if
+you're just trying to make some really cool pixel art and you want to start with a pallet because you either don't
+want to think about choices too much you want to you know have it be simplified or you want to have it look more
+classical there are a bunch of reasons why you might want to do it but you're probably going to no matter what no
+matter what the reasons are so we look at these palettes you can see there's a
+few things going on here basically the run down for this thread is that you have a subset of colors they
+generally have a kind of style or mood associated with them you can see this palettes really do
+saturated and all of the colors are D saturated they look almost like a makeup palette or is these ones very saturated
+right very bright colors but none of them are so exclusively none of them are
+so broad that they capture every color right they are limited in a way basically the exercise that you'll be going through the entire time when
+you're using a palette is how do I choose colors that let me express as many things as I want to without adding
+new colors right keeping to those limitations is what's really important and a really critical part of that is
+how to bridge different hues right so
+when we talk about you we talked about the spectrum we could think in terms of
+primary colors from an additive perspective or a subtractive perspective so RGB is one CMYK is another so this is
+sort of closer to what happens when you have pixels where the more light you put the closer to what you get and this is
+sort of more like pigments like paint where the more paint you add the more towards black you get because it blocks
+the light now when we are thinking about
+how to generate a palette when it comes down to often is how you sort of bridge
+and cross these gaps the concept of colour ramps comes up a lot in these in
+this thread and a ramp is basically this sort of slice of the palette that covers
+one hue right so this is sort of like dusty tone here this earthy tone that would be one ramp this sort of pink
+purple is another ramp and you have these bridging points when you pick a
+color that can actually cross both of them and you can use that to sort of walk along the palette so I'll talk you
+through some of my palettes now and how I come up with them and how I work them
+out so this one here is basically the Apollo
+Reviewing a palette against the spectrum
+pallet I can load it up and show you what it looks like in a spectrum format
+so let's do that really quickly okay so here's the pallet for Apollo and is the
+colors if I take the spectrum here
+alright so this is a rain this is like the full rainbow this is a pretty high
+level of saturation we can't look at the full spectrum at any one time because the spectrum is 3-dimensional right
+there is either way you look at it whether it's red green and blue three dimensions or hue saturation and
+brightness three dimensions this is hue brightness and this down here is
+saturation so we can look at two of them at any one time but we can't really look at three at the same time so I'm gonna
+put this on a medium high level of saturation and then show you what the
+spectrum looks like with this palette so to do that I'm just gonna take a screenshot basically and you might not
+see what's going on here because it might not record my screen but I'm just capturing this particular side of the
+window I'm gonna make a new file and I'm gonna paste it and then with the with my
+palette selected I'm going to go into color mode indexed what this shows you
+is a version of the spectrum that my palette can actually capture so these
+are all the colors in the palette that I can actually express with this and you
+can see here it is limited right like all of this green blue space here gets
+abstracted way down to this blue color right all of this nuance gets lost into
+this all of the different colors at the brightest side just go to white and all
+of the darkest ones go straight to black and you can see that where the where the
+shapes are a lot smaller that's where my palette is better at expressing those colors
+so I have a lot of different blues and purples here expressed and I have a fair
+few reds and browns and yellows green and blue less subtle it's sort of a more
+general more broad so if we go to a more desaturated version and we try to
+capture it again what comes out will look different you can see here that the the gray starts eating into the space a
+lot more and it starts sort of creeping into everywhere right because I I don't
+really have a lot of desaturated colors in my palette they're all kind of saturated or around the same level of
+saturation so all this is trying to express to you or I'm trying to explain is that you can't have the whole
+spectrum you just can't right and that's that's all this comes down to so your goal is instead instead
+of trying to take the rainbow and compress it down into a into a single you know set of colors instead start
+with a color and Brett out start with something that you like and then only
+add colors when you need to or try to add colors that work well outwards
+Styles, moods and filters
+palettes themselves don't have to be they don't have to be representations of the full spectrum one aspect of how you
+can deliberately use less of the spectrum is by stylizing right so coming
+back to this we were explaining before you know there are a lot fewer colors here we don't have like a full red green
+blue yellow you know purple indigo violet anything like that right we've just got a few series of colors and the style
+inherently means that you don't need to represent certain colors so we have
+words for things like this like CPR right sepia basically means you know you
+only work within a certain color space that browny yellowy sort of context and
+there's a whole bunch of reasons why we have those names from photography to printing and all kinds of different
+reasons the way that these styles are manifested
+is through what we would now call filters right that's what sepia really
+is it's kind of like a filter and if you use Instagram then this is gonna be really familiar to you a filter really
+if you think about it in real life like a water filter it takes stuff out right
+and it only lets certain things come through that's what an image filter is - and you can see here this filter is
+shifting all of the darker colors towards blue and all of the brighter colors towards yellow this association
+between cold and hot colors and darker things being cold and brighter things
+being warm is a pretty natural association for people because in real
+life hot things tend to go brighter and more warm colored our eyes you know when
+we look at black things we tend to sort of they tend to become d saturated
+sometimes blue is a nice analogy for that so there are psychological reasons why this makes a lot of sense and it's
+something that I personally do almost in every single palette that I make it's a
+technique it's not exclusive you don't have to do this but it's something that works there are other things that they
+talk about in this in this thread that are really interesting I think the probably the biggest thing that's gonna
+Getting past basic intuition
+happen when you're choosing colors and learning to choose colors is your
+intuition if you've never done any kind of paint work before in your life your intuition will tell you that fire is red
+sky is blue grass is green metal is gray right it's gonna you're gonna have these
+colors that you've got in your mind and you'll pick you'll go to the palette and
+you'll say I want blue that's blue that's my sky and you'll just take like the most bright blue because bright
+looks pretty right so you just take that and you'll put that on the canvas you've probably done this before I've
+definitely done this before but it's gonna look a little bit juvenile you might end up with something that looks a
+bit like this right blue sky my grass is green green grass
+wanna make a Sun Suns a yellow right so the other Sun like this is this is
+intuitive this is like what you do of course cuz that's the color of those things in your mind if you've never
+thought about color before how light works in reality it's not quite like this it's important to understand that
+saturation is a tool right more color brighter color isn't always better
+it's a tool you make a choice right and that's all this whole video is about that it's about making those deliberate
+choices about what you want so if we look at this saturation think our blue
+that is right looking down at this little dot here you can see that's like super blue the blue that I use in the
+Apollo palette by contrast is almost like a grey soda saturated right it
+looks this looks like a grey sky now compared to the yellow and the green here but if I start substituting out for
+the colors that I've got in the palette and I start working in the rest of it it
+starts looking again more saturated the more you work with it it looks this is
+like again a green grass blue sky looks nice invariably when you're creating a poet you have to sort of stay in one
+ballpark region for your saturation and you're probably going to invest in some of those techniques to bridge the gaps
+none of them are going to have all the colors and some palettes are going to have more more than others so again this
+then comes down to a question of what are you creating your palette for if it's for a single art piece then your
+choices are exclusively for your image right if you're creating a seaside image
+then you're probably not going to have you know these bright red colors unless
+it's a sunset so for this image here right we've got the varied associated
+colors we don't have any blues at all unless we talk about these very to saturate it there's no green but that's
+part of the styling but the image is in you could think of a game that looked
+just like this and if you wanted your game to be monotonous right one tone then this
+would be a really good choice games of course have like all kinds of potential and you won't always be making
+a game that has one tone and so there will be times and explicitly what I'm
+talking about the pellets that I make all of my pellets are designed to give me some
+room some wiggle room right I'm not just sticking to one tone the whole time I
+want to make something that's got some variety in it so this picture here is
+from Apollo this is supposed to look like an autumn kind of sort of it's
+quite lush it's got a bit of like a almost a nostalgic feel because it's so desaturation but then compare that to to
+this jungle background it's different it feels different right but it's the same palette so that's something that I have
+chosen to do for this palette to give it a lot of breath but you need to make that decision for yourself about what it
+is you want your palette to do that's the first thing I personally believe that the process of creating a pellet
+shouldn't come down to just creating ramps and trying to bridge those ribs even though my palettes are arranged in
+this really like grid like way that's really more for my ease of use and I
+don't think of myself as an expert especially if you're a pixel artist who does things like commissions or you have
+your own style and you just want to make your own art you are probably in a much better position to pick a much more
+limited and much more creatively chosen palette ultimately again it comes down to you comes down to what it is you're
+trying to evoke so I'll talk a little bit about how I create a palette and
+Creating a palette from scratch
+sort of what that process looks like for me the palette I come up with right now may not be a complete palette or a very
+good one but I want to talk you through my process so they were like I said there were a few techniques that I like
+to employ things that I've pulled from that thread and from looking at other artists online that
+kind of thing and this is kind of this is my interpretation what I tend to do
+is I'll basically start with the saturation the saturation does a lot it's something that most of your colors
+will be bound by all of these you can sort of point to the entire palette and
+say this is a saturated palette or its core it's not a very saturated palette none of them or very few of them have
+some colors that are hyper saturated in some colors that part because it's very rare in the world for you to see an
+image where some colors are super saturated some heart that's not a very natural thing to occur so saturation
+tends to be something that you can set first and stick with in and the rest of the palette will feel cohesive around it
+I'll pick a saturation I usually stick around this for whatever reason 50 to 65
+percent mark around here I don't know why I just sort of that's where I go because I don't want something that's
+too dreary right and I don't want something that's like fisher-price so I just stick around here that's just
+what I do and generally speaking the the first ramp I usually do is for whatever
+reason I usually pick a green or a blue and I'll do it based on like a complete
+arbitrary because I like it right so I don't really like this one too much it's a bit a bit much for me that's a little
+little nicer maybe a little more too saturated a bit darker maybe something
+that I could use for grass right because I'm a game developer I think in these practical terms so from this point here
+Creating a ramp
+right I've got a color and I like the color I'll start building a ramp out of this Cup in a spray you can do that by
+pressing this little exclamation mark here that just adds the color so what I'll do next is I will take this color
+I'll shift it and then I'll add that color and as I'm doing this I'm gonna
+start applying that filter that I was talking about before so in this case I'm
+going to shift towards yellow as I go up
+and the amount of times you do this is
+basically that determines like how many hues you have in your palette and as I'm
+going down I'm you know hue shifting towards towards blue as I'm going up I'm
+here shifting towards yellow and so now we've got a bunch of colors all on this
+spectrum they're all the exact same saturation though this isn't really
+complete yet but it's a really good start and if we run our mouse across it we can see this interesting sort of line
+this little like arc from here down to there and I'll try to I'll try to hit
+like like the true green that I want to hit so like I kind of want to like get
+to this color at some point right so if I'm scrolling through here and I don't quite make it then I can see okay this
+color and this color could be a little further to the left so you can unlock a color and you can shift it like this to
+get a bit closer and this one here you can shift it over here and then you can lock it back up again and drag through
+and you can see it it's a bit zig zaggy now right you can see that that line that we were drawing it's sort of like
+hooks over and as I do that you can actually see that visually right you can
+see how these two colors sort of don't match up with the others there's sort of there's like a different difference
+there it's just a question of how we move through this ramp and this process
+of just like shifting and jostling here and there that's how I create a ramp
+that's pretty much the whole process so it's really handy at this point if you
+do actually start placing these down on the canvas and I'm just going to use the square bracket keys to shift through the
+hue as I'm placing them so square bracket you can see here up there the index changes that left square bracket
+right square bracket putting clothes does that now I have like a bunch of colors and I want to
+sort of move through them people and I see I like these sort of less saturated ones down here more than I like these
+ones I feel like these have a bit more grit in them I don't know they're speaking to me a bit better so I'm
+actually gonna do that I'm gonna take this color here and I'm gonna shift it a little over towards yellow a little bit
+maybe bring it down slightly you can see there that now falls back in line with
+like these four really work with each other and these three don't work with them they work with each other but not
+with these three and so when you scrub across here you can see there's like a
+line and then it jump right back in the other direction that's between these two colors so it's
+really interesting right just the science of it you know that the actual your eyes can like see the math right so
+again I'll probably shift this over towards yellow a bit more and I've sort of found myself now in a space that I'm
+that I'm interested in it's I'm sort of just exploring a space in the most literal sense of the word then I can
+start trying to trying to trim this alright I can say okay which colors do I
+need which colours don't I need I'm looking at these two they're pretty similar these two are really similar
+maybe we could delete some of these so I could just delete that and delete that
+and now we've got a bit of a different scenario going on maybe we could bring
+this one a little more down and you can
+you can use whatever method you want to figure this out but the most important
+thing is that you get there in the end so really starting to like these colors now and I want to incorporate a darker
+version as well coming probably towards blue a little more and you can watch it
+you can like hold your mouse down and look at the colors themselves as you do this which is what I'm doing right now so I think I had it right around there
+so I'm going you know blue green bright dark that's kind of like what my mouse
+was doing there right and I think that's not too bad it might be a bit of a hard jump you can see that
+the the contrast between these two is much greater than these two so you know maybe we want to bring this up a little
+bit that works a little little bit better and we've got six greens here
+that's pretty good that's some not bad and you can look at the difference
+between them as you go through and just look at the distance that's covered by them right so like the distance between
+each of them so this - this quite a jump this - this much less of a jump in terms
+of brightness so it might serve us to bring this one up a little bit mostly
+your priority is to be is to failure your perception if your eye tells you it
+looks alright then that's that's good enough right if your eye tells you it looks good but the math is different you
+know maybe you're actually sort of stumbling into some sort of mathematical or perceptual feature that you've never
+noticed before like maybe maybe the brightness curve looks best when it's
+done like this where we can actually tell darker colors you know apart much
+better than we can tell brighter colors or something like that I don't really know but it's something that you know
+doesn't have to be a certain way don't take what I am telling you now is like a as gospel I know that's really
+difficult I know you're probably following along as I'm showing you this stuff maybe you've got the same greens on your canvas as I've got in mind
+maybe you screenshot the screen and you you know derive the colors in that way the point is to have a process that
+leads you towards stuff that works that's what you care about right so again I've picked these colors I think
+they're good colors I think they'll work really well for a field for trees if I
+wanted to make a blanket change to this one really easy thing I can do in a
+sprite some of these tips are a sprite specific is I can edit them I can make
+adjustments to the brightness contrast hue saturation or do a sort of color curve so this hue/saturation gives
+me a bunch of sliders and I can actually sit here and shift the whole thing if I want most of the time if you've worked
+in save a green that same ramp won't you can't just shift it right you can't just
+go to pink and say oh that's that's the right ramp for pink because it doesn't work that way
+well each ramp will have a different curve associated with it so hue you
+can't you can slide a little bit you know but not too much saturation you could definitely get away with doing a
+lot so you can make some bigger changes but again this should be palette wired for saturation I think some ramps will
+be more saturated than others naturally but not all of them and then value is just brightness overall brightness so
+Bridging ramps
+the way that I then think about different different ramps and
+specifically the extremes of my palette so the brightest colors and the darkest
+colors is I think of it kind of like this I think of it like every color
+this is like black and this is white everything converges on black at the
+bottom end and everything converges on white at the top end okay so in my in my
+palette here for Apollo you can see all of these colors down here are very disaccharide and I can use let me give
+you a little quick demonstration if I have this darkest color here then I have this color here which is still it's got
+a little bit of blue in it but it's mostly still on the on the grey ramp and then I can come up into you know as many
+different shades they were and I have a lot of shades of this monochrome color but not every ramp has this many shades
+just the black and white red and there's a reason for that so this is my my first ramp and it's got
+like how many colors 11 1 2 3 4 5 6 7 8 9 colors the rest of them only have six
+and the reason for that is that they all pick up where these ones leave off so this black actually finds its way into
+this blue and then this blue and then this blue and this blue then there's blue then this blue and then I go
+straight into the way so the white
+remember before we had those sort of like color ramps that we have those
+bridges here the way I've got it set up is that at the very top end and the very bottom end they bridge all the way
+across and that's just something that I tried to I just was giving that at giving that a go for the for the Apollo
+palette I tried different things every time so I have like very very simple
+colors and the purple actually fits in here as well I can actually go from blue
+through purple to get to black there's a few different ways that I've done this
+and then from here I actually go into this yellow
+so this one bridges this yellow also goes across down into these Browns and
+then obviously into this purple again and then into the black and then white
+on the top end so you can see how this color crosses two ramps this color
+courses three ramps that's sort of just how I how I approach that it's not
+perfect like this you know you could probably work in this color upper here maybe if you really wanted that extra
+gap because I definitely feel like this white is it's a big jump between this white and this yellow so being critical
+in my own work but that's how I that's how I go through this right I just iterate and try to improve next time we
+missed a color I was wondering why that didn't line up so that's ones like this
+one here so here's like an opportunity where I would probably I would probably consider merging these two where it's
+like oh they're so close can I think of a reason practically again this is a specifically gamedev palette right so
+for me I'm trying to do a pixel art game I want to have a lot of diversity in my
+colors or I want to have specificity in the colors I don't want to colors that serve the same purpose that's something
+that I'm trying to keep you in my mind as I work that practical side of it is really important this process it's really just about something getting
+something that works it's not about me giving you the definition of like what
+the best way to do palettes forever is because like I said like this method it
+probably won't get you to some of these more interesting far-off concepts with
+palette work this idea here that we really just got one ramp that moves
+through the different colors and only like the different hues are used at different brightnesses mapping hue and
+brightness together is like really really different and it has a really interesting effect but it's
+not intuitive like I don't think that it makes a lot of sense logically to have
+red next to purple or blue this gray steely blue I kind of justify that with
+words but it looks really good all I can say is that they work well probably because they're of similar
+saturation and brightness and if you're working with a very disoriented palate
+the hue changes don't make as much of a difference or that they're more
+acceptable so that's the best guess I can give but I personally um I'm not
+classy enough to be able to create this this is a really expert back in back in Adam land I went before I move on one thing that I
+think is really important is to consider saturation in this because we haven't worked with it at all what I tend to do is saturate in the
+middle upper third that's where I saturate everywhere else a desaturate and that's to help this process where
+the top end and the bottom end lead into each other colors bleed into each other better when they're less saturated
+that's kind of like what I just said right I guess I just learned something so I tend to desaturate the top end at
+the bottom end so that they blend a little a little bit more nicely so I'll take this screen and I'll bring it down
+and it looks little doesn't look as nice not on not in isolation but I'm gonna
+start saturating the ones in the middle and then coming back down and desaturating again I'm gonna start and
+you can see me dragging down to the left here and this process will allow those
+colors to merge a little bit better again but you can always come back here and and play with things until they're
+right it's never about like getting it right literally the first time every time that's it's not realistic to expect
+every move you make to be a forward move sometimes you just do something and you it's a it's a step to left and then you
+make an iteration on it and you a little bit closer yeah I just repeat
+this process basically I start with a color I like in the blue side of things you know I pick a saturation that's in
+the middle somewhere and I I have at it and you know it's worthwhile like I said
+to have some sort of image that you're working with here so you know we can pretend this is a kind of a kind of like
+skyline or something just to give us some sort of context if we're trying to
+get a series of Blues now it's nice to have some sort of context so I'll do the
+same thing where I'll sort of shift a bit to the left as I go up a little bit down towards the darker blue a purpley
+space as I as I go down so up towards yellow down towards blue sort of like an
+s-curve here that's what I'll be working with you can take your colour you can shift it press the exclamation mark
+shifted explanation shifted excavation and get something that looks pretty reasonable and flip these and that's a
+lot of Blues probably more than we need let's delete some of these and then iron out the difference
+and I'll use the shape tool to sort of work my way through this okay so straight away that's a really
+big jump I can bring this back up so unlock it bring it up and then this will
+probably be a really big job - not so
+bad [Music]
+and because I have this context now I can start making judgments that make more human sense I can start thinking
+about oh this you know the sky is too dark too quickly or something like that right like these two colors don't work lice nicely next to each other if you're
+just looking over here the whole time it can get a little difficult to sort of make out the difference and to make
+those those choices and you know overall the image doesn't make that much sense but it's it's more about building a
+palette right so it doesn't really so super critical so at this point I've got
+like you know a pretty good selection and I think my blues work well with my
+greens I think this is really nice actually again you know we could take all of these and we can adjust them however we
+want we can change the contrast we can change the saturation we can do we can
+do whatever we want so maybe maybe we like that and that's how I build my palette I take a color I build a ramp
+out of it I I play with the different shades I add and remove colors until
+it's got a nice distribution I shift towards yellow at the high end I shift towards blue at the bottom end and then
+when I'm happy I start playing with saturation for each shade that's pretty
+much it so these ones here in the middle I might saturate a little more these
+ones on the top end I might desaturate just comes down to what you want to do and it helps to really try these in
+different contexts so if I wanted to flip this right and think of this as like a beach scene like what is what
+does this look like now as water pretty good actually and since since I'm here
+it's like okay let's think about how we build like a yellow like what does that look like maybe I
+start with this color would be a better yellow and then I work my way down now
+Navigating tricky spaces
+one thing that's gonna get you that you should think about or be aware of is
+that when I when I said shift towards yellow at the top and shift towards blue
+at the bottom what does that mean for yellow like how do you shift towards
+yellow from yellow or towards blue familiar does that mean that dark yellows become green right does that
+mean I have to go through this space as I go down that's up to you the answer is no you don't have to do
+that you can actually come back the other way towards blue through a like a warm space right through red if you want
+you can desaturate to make that less of a factor there's a lot of different
+tricks you can apply to sort of get your way through that space for me what I
+tend to do again is come back to practicality so I'll take something that I know I
+want and then I'll think of it that way so this yellow I went towards brown
+because I I do a lot of trees right wood trees leather anything that you know
+dirt I want those shades in there so I took this opportunity to go from yellow
+through to brown but you can also see that my red here goes towards yellow at the top as well goes towards that orange
+a yellow color so thinking about your your context what you want to convey in
+your palette will help you make those critical choices well you can't have every color to build your ramps in a way
+that makes the most sense for you how does that sound is that pretty good
+that's how I build pallets that's what I do hey pal thanks for watching and thanks
+most especially to the patrons and twitch subs who support this channel and my game dev project insignia to find out
+more click the links in the description below and if you liked this video tell youtube by clicking the like button and
+then YouTube will tell me and then I'll make more videos that's nice

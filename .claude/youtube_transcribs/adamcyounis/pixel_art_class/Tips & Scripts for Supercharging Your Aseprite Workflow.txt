@@ -1,0 +1,585 @@
+Introduction
+[Music]
+hey pals welcome to a new video today i
+wanted to be talking about a sprite
+particularly a sprite export workflows
+and things that i've been picking up
+over the years including tips to use the
+interface and custom scripting
+to allow you to export your work from a
+sprite into your game engine or wherever
+you need it to go
+in such a way that allows you to cut
+down on lost time
+and avoid workflows that actually force
+you into doing things multiple times
+right we want to cut out all that
+repetition and increase feedback so
+let's get into it shall we
+Setup
+so
+the first thing that i want to get out
+of the way is if you haven't watched my
+a sprite 30 minute crash course video
+and you're new to a sprite definitely go
+check that out before proceeding with
+this video if you have used a sprite for
+a while or you've seen the video welcome
+uh so i basically wanted to just give a
+quick refresher on a sprite just to set
+the scene on the different kinds of
+projects that you might be working with
+right very common things so one is
+a project with lots of layers
+Export Layer Groups
+okay you can create new layers with
+shift
+n
+and i do this very frequently right if
+i'm creating say some kind of
+environment you know i might start
+putting down a sky on a single layer and
+then
+directly after that i'll make a new
+layer shift n straight away
+and then if i'm putting some grass down
+you know that'll come down next
+and i've got a couple of layers here
+whatever and then if i want to put
+something on this i'll immediately shift
+in
+and i'll start working on my tree or
+whatever it is okay
+this workflow the point of this is to
+avoid destructive edits okay destructive
+edits are whenever you do something that
+undoes a previous command or input that
+you've created and in this case if this
+was all in one layer if the tree was
+bound to the rest of the work
+then
+if i wanted to move the tree i'd have to
+select all the pixels that related to
+the tree and you know i would move the
+tree and i'd be creating this lovely
+transparent issue with the background
+and i'd have to paint over it you don't
+want to do that right so working with
+layers is
+one way to you know preserve the work
+that you do and allow you to mold and
+manipulate your work
+very quickly
+okay
+so i'll just for the sake of the video
+make this a little prettier okay it's a
+great start it's very rough one thing
+that you will note is that none of these
+layers have names
+and when i'm working in this very
+sketchy part of the process and i'm just
+trying to figure out you know what my
+shapes are and just lay things down i
+don't usually name these layers straight
+away normally what i'll do is just use
+the move tool which is v on the keyboard
+and click the thing that i want to move
+around
+okay
+doing that allows me to basically get to
+whatever layer i want without having to
+worry about the name of the layer not to
+say that you shouldn't be naming layers
+it's just a handy way of like getting
+around early without bogging down the
+process right if you're looking away
+from the work to go find the layer that
+you want to click it to then come back
+up so that you can draw i feel like that
+really slows down the workflow and one
+of the key reasons why i'm making this
+video my priority here is to minimize
+the amount of repetitive tasks or tasks
+that take you away from the work and in
+a much bigger project such as this one
+you end up with quite a large amount of
+layers okay and even here not all of
+these are named
+so
+this work
+is essentially
+a parallax background there are lots of
+layers here and each layer
+has its own
+depth
+and at every depth i want to export a
+png so in the game it looks something
+like this
+where all of these are on different
+layers and you can see if you move the
+camera left and right there's like you
+know actual 3d depth that gets perceived
+and it actually appears in the game like
+that so as we move you can see things
+subtly looking like there's some 3d
+depth
+for me to achieve this effect each of
+these needs to be its own image right
+you need a layer for this you need a
+layer for this you need a layer for the
+fountain
+and if i'm editing back and forth
+between a sprite and the environment to
+see how things fit like this is a very
+difficult
+scene for me to work in contrast there's
+a real issue here that i'm working on
+and it's i've been on it for a while now
+as you've remembered if you've seen any
+of my previous videos
+so
+my goal is to get as close a connection
+between me working and this the target
+environment as possible now with default
+a sprite
+really if you're trying to do this
+you kind of don't really have a lot of
+options here if you export you can
+export visible layers or selected layers
+you can export groups but if i want to
+export each of these layers
+or each of the groups kind of stuck
+right we're in a situation where okay
+you gotta
+export and then change the name and then
+export and then change the name
+uh you'll be there forever
+you
+you could try you know exporting what
+else do we have we have save as no
+that's not going to help you out
+pretty much uh pretty much stuck here
+now months ago i was browsing the
+esprite forums and i found that somebody
+had written a script to actually allow
+you to do this
+it was uh written
+by
+gaspi what this does is essentially uh
+creates a bit of a batch operation right
+it's a series of functions that run uh
+after one button click and what it does
+is it goes through the file hides all of
+the layers and then exports one layer at
+a time by turning it on exporting
+turning it off turn the next one on
+exporting etc i really like this script
+and i recommend it
+for me
+i actually found that my needs were one
+step further okay so i've got say this
+building and i've got different layers
+on the building
+right
+different elements
+but i want to export the entire building
+as one slide for my use case
+so i've gone ahead and modified this
+script
+to work with groups as well as layers
+and it only exports top level things in
+the tree so any anything that's not
+indented it will export as one png
+it can also ignore locked layers too
+so there are things in this scene that
+are here just for scale like harman for
+example he's locked but he's here just
+because i want to be able to create a
+reference for everything same thing with
+this blue background right it's just
+there to give me some sort of context
+and the script's really cool so all you
+need to do to import scripts is just
+open scripts folder
+and then just paste them in here it's
+really simple and then each script will
+give you an option
+to utilize it essentially so in this
+case export layers mod is my version i
+will just
+change it you can see it working it
+exported all the images and then they
+come out here so one button click
+instead of you know 20 or 30 exporting
+and renaming all the layers and this
+lets me essentially have you know
+certain layers inside of these buildings
+and bits and pieces in this case the ivy
+i've got like the ivy and then the
+shadow of the iv that was like a copied
+layer that i colored differently it's
+only when you're doing more complicated
+things like animation and you're
+recoloring certain body parts and doing
+operations that must use the timeline
+that i use
+named layers 100 of the time
+Export Tags-To-Sheets
+so
+let's go have a look at animation so
+here's an animation file
+and
+essentially this is a jump animation for
+armin this is based on the
+jump video that i put out a few months
+ago and what we've got here is if you've
+seen my workflow you know that i create
+a lot of layers and i give them colors
+originally
+each body part has a different color
+which allows me to move things around
+very easily without worrying about
+breaking any of the other things so if i
+want to adjust things like where the
+character's knee is on this frame it's
+very easy to just go to the frame and
+change things you know very slightly so
+in this context
+i'll name them all and that allows me to
+do things like go to the torso and just
+recolor the entire thing with shift r i
+can take the color that i want i can
+switch it to some other color and then
+when i press ok that applies to the
+entire animation so for batch operations
+like that yeah of course you want to
+name the layers
+now what happens
+if you have projects with multiple
+animations
+so i'll show you another
+file which is
+currently work in progress this one has
+lots of layers and lots of frames okay
+so in this context i'm not actually past
+the
+draft phase here this is like super
+duper early so i've just got like
+messy silhouettes for a lot of these
+animations
+and i haven't gone to the stage of uh
+you know isolating each of the elements
+i've got the layers there like here you
+can see this charac this version of the
+animation here has like a big swipe
+and you can see i've got different
+colors for different body parts and i've
+only really got the body parts that i
+need to see the animation first just to
+get the timing right and in this context
+like there's so much going on here right
+it's huge how would i manage all of this
+if i wasn't able to see it all in the
+one file like imagine if i had to export
+each of these animations from their own
+ace profile how would i manage the scale
+of the enemy the colors that kind of
+thing it all needs to be here in one
+file so so you can make a new frame with
+alt n
+so shift n is new layers alt n is new
+frames
+and
+you can also create these tags if you've
+noticed
+the tags are really really important the
+way to create a new tag i'll just go to
+a different file here if i make a new
+few frames
+take all of the frames that you want by
+clicking and dragging along the numbers
+right click
+new tag
+this will automatically give you the
+from end to so the first frame and the
+last frame and then just give it a name
+so like idle for an idle animation
+what's cool about tags is
+if you have say multiple of them when
+you press enter it will only preview
+the currently selected tag
+so from the frame that you start in if
+you press enter
+it will iterate through that
+why this is useful of course is i can
+then do things like looking at this
+getup animation
+or this grab animation
+specifically things that need to loop
+right so a run it's really important to
+have that in one tag so that i can watch
+it
+loop from the last frame to the first
+frame but this tagging system can also
+be used to make exporting faster if you
+have a script for it i was doing a
+little bit of complaining
+to the developer of a sprite one of the
+developers
+david
+and
+he wrote me this little script that's
+called
+tags to sheets which is awesome and
+clicking this button essentially will
+take
+all of the tags that i've got and export
+them into pngs so single sprite sheets
+per animation to do this by default like
+if we were trying to just export this
+with a sprite's default functionality
+what you normally get stuck on is you
+can create you know a horizontal strip
+or you can create you know multiple rows
+or columns
+and you can create them based on the
+tags
+i believe you can split tags here and
+you can select you know the the things
+that you want
+but as far as i understand if you do
+this so all frames
+split tags
+split tags by rows hopefully one sprite
+for each tag that looks right
+so what this feature does is gives you a
+new row for every tag that you create
+now this looks
+like it's going to solve our problem but
+if you use unity
+there is a problem here
+the problem is if i take this
+and i want to make this a multiple
+sprite and redraw enabled apply that
+we'll go to the sprite editor and we'll
+go and review this
+if i want to do some kind of splitting
+of this down into different animations
+then i'm going to need to slice it
+and if i'm going to slice it what this
+will do is it will slice them into an
+array so now i have all of my animations
+sure the problem is
+that this process does not know where
+one animation ends and another begins
+and that's super critical
+because if i go now back to frame one
+and i add a frame so that this is zero
+one two three
+this becomes three
+but this one used to be 3.
+so
+if i start putting these into different
+animation scriptable objects or whatever
+i want the actual index of each of the
+images will be shifted
+forward for every image after the new
+frame that i've added and that totally
+messes up the entire
+workflow you'll start getting frames
+from the wrong animations in the wrong
+files because none of these
+are actually referenced in a hard way
+like this frame is whatever number of
+frames there are before it right it's an
+index so this is like the 20th frame or
+whatever
+uh 23. well if we add something before
+well now it's frame 24. so you
+definitely need to separate these into
+their own pngs you can't just export
+them as one big image as if you were
+downloading it from like a sprite
+website that only works if
+those amount of sprites will never
+change okay so if you're working
+with a sprite it's really important to
+be able to test your animations in the
+game while you're still roughing them
+out i can fight this enemy right now
+so when i'm playing the game i'm testing
+with these dummy animations right i'm
+testing with really really simple
+blocked out drafts and the reason for
+that is i want to see if those
+animations are good or not do i need an
+extra frame here do i want to cut some
+stuff do i want to change where the arm
+is on this frame does it have the right
+amount of power behind it that kind of
+stuff needs to be done and so we need
+different pngs per animation and we want
+to do that in one go
+so this script by uh by david
+essentially just does that in one go
+export uh tags to sheets makes every
+single tag its own png done
+really really handy those two
+scripts get me through like most of my
+exporting being able to take things put
+them in a group and layer them per group
+is really great and then making tags for
+animations
+is also really great and it's one button
+for every time i want to do that super
+handy because it lets me again lets me
+go back and like check things without
+having to get anxious about the fact
+that oh no if i want to export this and
+test it in the game i'm going to have to
+do some process of like exporting 20
+different things you never want to be in
+that mindset there's one other script
+Pribambase Blender Sync
+that has come out very recently only
+last month that i want to show you and
+it's for 3d modeling say we are in
+blender and we want to do pixel art
+textures on our 3d models
+normally in order to have this workflow
+work at all
+we would need to have a png that lives
+in our file system somewhere that's open
+in a sprite and open here being used to
+texture a model
+and the workflow is essentially draw
+some stuff in a sprite press save
+hopefully it maps correctly to your uv
+and then go back to a sprite and try
+again
+it's really really messy and takes a lot
+of time
+so this character is a character from
+final fantasy 3 on the ds that i i
+ripped and recolored to test this out
+and it was pretty successful now the
+magic here is coming from a script
+called pribm bass and it comes from
+lampy sprites on twitter you can see it
+working in action here and i'm going to
+show you very quickly how it works
+essentially
+you
+have the uv from blender imported into a
+sprite live
+and the actual sprite that you work on
+then updates immediately in blender from
+a sprite and it cuts out all of the
+question about oh are these pixels on
+the arm or are they part of the shirt or
+is this where the head is or is that the
+foot
+so for those of you who use 3d this is
+going to be interesting to you
+essentially say you've come in here and
+you've created your character
+and you've created the uv map for the
+character
+essentially what you'll have is
+this big image with the uv map applied
+to it okay so all of these
+um
+triangles and bits and pieces these
+represent like surfaces right so we've
+got the clothes and the belt buckle in
+this case uh the hat bits of pieces you
+can see those here like this is the hat
+and this is the feet it's very
+unintuitive the 3d workflow for me i'm
+not very proficient in it but i'm just
+getting started so in order to make this
+work you'll have to open the file in a
+sprite
+go to connect under the sync menu in the
+tools
+and then in a sprite if you press
+file sync you'll get this menu and it'll
+say sync on
+from here
+you're synced
+so we have our texture map here
+we just go sprite
+send uv
+and this will give you some options
+press ok
+and in a sprite you will actually see
+the uv being applied
+so now
+i can actually see the map and i can see
+which pixels relate to what so this is
+the the cuff of the sleeve and if i want
+to change the color of this then i can
+do like a nice line through here and
+what's cool is that in
+blender this is being applied in real
+time
+so this line i just created is now here
+you can see it applied i didn't have to
+save anything to make that happen but
+essentially
+i can come through here and i can undo
+that you can see it being undone there
+and let's say i want to do a nice
+recolor so i originally recolored this
+to be blue but now i'll recolor it back
+to be red
+there we go lovely now we have a red
+mage instead of a blue mage
+all in real time super handy you know i
+can go
+and uh do the same thing with the face
+whatever we want the shoes and let's go
+a little darker
+nice
+so now our shoes are a little more brown
+i could go even darker than that to be
+honest
+very good so there you go proven bass
+it's an awesome way for getting really
+fast feedback to and from a sprite and
+blender
+and i think i'll be using this one day
+i'm not sure to what extent
+i'll be uh going through the motions of
+applying 3d to my pixel art but
+i'm very interested in this art style it
+speaks to me
+from just my upbringing i love the ds
+and early 3d games on the n64 and the
+playstation were the games that i grew
+up playing so
+something about pixel art being applied
+to low poly 3d really speaks to me
+and i hope this video has spoken to you
+if you have any other requests for
+workflow related tips in a sprite feel
+free to let me know in the comments and
+i will be posting the three scripts that
+i spoke about today that's tags to
+sheets export layers mod and ribbon base
+in the description below
+so thank you for watching as always i've
+been adam you've been the pixel pals
+this has been in details
+until next time
+Outro
+hey pal thanks for watching and thanks
+most especially to the patrons and
+twitch subs who support this channel and
+my gamedev project insignia to find out
+more click the links in the description
+below and if you like this video tell
+youtube by clicking the like button and
+then youtube will tell me and then i'll
+make more videos that's nice
+thanks again and until next time

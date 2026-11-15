@@ -39,3 +39,9 @@ luac.out
 *.x86_64
 *.hex
 
+
+# Sprite review images
+previews/
+
+# Image References
+/references
