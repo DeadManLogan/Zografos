@@ -1,0 +1,262 @@
+Introduction
+uh as long as you're consistent with it
+and in fact that's
+the same for any technique as long as
+you're consistent with your technique
+it's not a big deal
+[Music]
+yeah so i mean shading is shading's like
+really easy you guys
+you guys could figure this out in no
+time i'm sure uh basically
+um i like to top light a lot of my stuff
+um
+top lighting is relatively easy and it
+is relatively practical because
+it's a similar lighting condition to
+what we experience every day
+right the sun is up in the sky
+and it lights things down below so it's
+very rare for things to be lit
+from underneath unless you're at a
+campfire at night most of the time
+they're going to be lit
+from above to some extent and what i
+generally do
+is say i've got my formless shape and i
+just want to light it up it's like a
+sphere or something
+i'm going to use the shader tool in
+unity to just keep my strokes inside so
+i have to think about going outside
+basically
+How Light Works
+the way light works is the more
+the more light can bounce off of the
+object
+and into your eyeballs the brighter it
+will look
+okay so we're talking about the
+directness of the light
+now generally speaking light travels in
+like a straight line
+well it always does travels in a
+straight line from the source
+to an object when it hits that object it
+scatters
+right in all different directions and
+some
+materials you know let light pass
+through but for the most part it
+it scatters now when you've got
+someone's eye
+and they're looking at an object that
+has some light
+reflecting off of it right nothing is
+completely
+like mirror perfect so uh let's just say
+i
+have the light coming down in this arrow
+and that's my white surface even though
+the light's gonna bounce
+mostly back in the direction it came
+it's probably also going to scatter in
+all different kinds of directions
+and most of that light well some of that
+light will hit our eyeball
+and when that happens we register how
+bright this is right
+on the flip side an edge down here
+that's not receiving any of the light
+because it's actually parallel to the
+light source
+right the actual face the normal of this
+face
+if you know anything about 3d graphics
+so the direction of it
+is perpendicular to the light source it
+basically means that there will be no
+light hitting this and then hitting our
+eyeballs
+so this looks dark so that's
+true for any direction that the light's
+coming from in any
+any scenario and so when we take that to
+our ball here
+we can just think about the light if
+it's coming from above
+what that would look like it would look
+like this where as the
+surface of the ball slopes away
+right this angle from from the
+you know heart of the ball towards the
+light source
+as this angle becomes more 90 degrees
+less lights gonna make it
+right and different in because it's
+around
+different intensities of light are also
+going to be
+gradated i guess away so there's going
+to be a gradual
+change in the amount of light that
+reaches
+a given part of the ball right and on
+the very bottom here
+none of it will will reach now the
+Shading With a Limited Palette
+the thing to really understand about
+this from like a like a shading
+perspective
+is that you've only got so many shades
+to work with in your pixel art
+in your pixel art palette and because of
+that
+you need to know how to distribute those
+shades over the ball
+right so it's not like it's not
+necessarily going to be
+this this distance between this light
+here and this shade here
+and from this shade to this shade and
+from this shade to the next one down
+it's not going to necessarily be linear
+that relationship right the distance
+between them
+is not linear because
+the angles well it's just that's just
+not how it works
+right uh as probably a scientific reason
+why
+i guess the amount of light bouncing
+back is not linear
+so what this really should look like
+is i use like a normal curve basically
+when i'm doing this so what i do is i i
+basically
+have my colors and i'll use
+almost none of this color if you think
+about the amount of
+pixels we dedicate to a certain value
+if you take all of these hues here right
+so i'm just going to take a block of
+this
+and then i'm going to shift it up shift
+it up
+it's kind of like this that's the
+distribution of
+how many pixels per shade
+uh so what that means is like this
+darkest color here you might use at the
+very very bottom
+barely nothing this color here you might
+just skirt around a little bit
+this color here definitely not as much
+and then this one takes up a lot and
+then you start
+bringing in less and less of the
+brighter colors
+so that's kind of how i think about when
+i'm shading
+how i approach the stuff that i shade
+and that's
+relatively true for even like um
+even this gear here if you actually look
+at the distribution
+ignoring the outline so the outline's
+black that's fine whatever
+but like this color here there's only
+like 15 pixels or so
+this color here is a bit more this color
+bit more and then this one the body
+color is a lot of that color and then on
+the outlines you know
+less again on the top and on the bottom
+now
+there are different things you can do to
+you know gather out the
+changes in color because obviously the
+the ball won't be like
+flat like that the banding that we're
+seeing here you know you can try to
+balance out the banding but i don't mind
+it i think banding's okay
+as long as you're consistent with it and
+in fact that's the same for any
+technique as long as you're consistent
+with your technique it's
+not a big deal so yeah
+Edges, Specular & Rim Lighting
+that's how i usually go about shading
+and if i'm going to shade something like
+a cube you know it's
+pretty similar contrast is the big
+the big uh important factor here
+contrast is the thing you really really
+really want to understand
+when you're doing any kind of edges so
+a cube is all about flat sides flat
+faces with
+sharp edges and the harsher this
+contrast the more
+hard the edges are going to look so if i
+was to try to
+make the transition between this color
+and this color you can see that they're
+two
+palette spaces apart if i was to put
+this color in between
+i'm making the transition softer but i'm
+also making the edge softer
+right so this looks like the edge is
+rounded
+as a result the changes in light value
+are gradual therefore it looks rounded
+it looks like there's a sort of a
+rounded edge on this
+now if you want to instead make this
+seem
+more dramatic and still have this edge
+you can do what's called specular
+lighting
+where you light up the corner to make it
+seem like
+this is basically replicating a
+phenomenon where some of the light
+that's bouncing from the light source
+is actually hitting this corner
+perfectly and hitting your eye directly
+but what that does is actually makes
+this look sharper as well
+so that's what this is that's specular
+lighting here
+if we have light that's leaking around
+the sides
+this is called rim lighting
+and these are pretty common little
+tools that you see get replicated in
+things like um
+lot of 3d modeling has basically like
+tools and techniques and things put in
+to make this stuff happen
+stuff like subsurface scattering those
+all have been
+solved by 3d modeling in the last few
+years and so
+there's a lot of work that's got into
+understanding how they work and so
+that's why i'm using their kind of
+terminology so
+that's pretty much how i shade and
+that's like a bit of a breakdown
+hey pal thanks for watching and thanks
+most especially to the patrons and
+twitch subs who support this channel and
+my gamedev project insignia
+to find out more click the links in the
+description below and uh if you like
+this video
+tell youtube by clicking the like button
+and then youtube will tell me
+and then i'll make more videos that's
+nice

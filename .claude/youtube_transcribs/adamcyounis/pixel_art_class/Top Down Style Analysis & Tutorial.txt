@@ -1,0 +1,434 @@
+Introduction
+[Music]
+g'day pals welcome to a new video today i wanted to talk about top-down pixel art following on the previous video on
+pixel art styles i want to talk about styles in this perspective lay down some principles for top down pixel art and
+then maybe do a bit of a tutorial on starting your own okay you ready let's get into it
+Analysis Overview
+all right top down pixel art this is an area that i don't have like a whole lot of experience in i haven't made many
+games with this uh format and um yeah it's not it's not something i spent a lot of time doing but it's been really
+fun doing a bit of research and breaking down what i've noticed and what i can share with you today so
+let's do uh do it like we did last time and look at a nice big grid
+of games that have this this top down feature so what is top down it's essentially a
+perspective where the camera is above the action looking down in a kind of orthographic way where everything is
+laid out as if it were on a grid right so you can see the perspective of things
+like uh square plots of land appear rectangular to us they don't appear to
+fade into the background i'm essentially going to be protracting out from games that inspired the ones that we'll be
+talking about today here we've got the original final fantasy this is uh that's on the nes
+this is uh we're looking at secret of mana and then uh chrono trigger
+this example here of chrono trigger is kind of like the one outlier where you will ever see a sky and an ocean in a
+top-down setting like this this is a very unique perspective trick i think it works okay
+in the snes but it's a very seldomly used technique and
+it can go wrong very easily so use it at your own discretion
+working back on handheld we've also got the pokemon series of course and on the snes
+uh the legend of zelda are linked to the past this is i think probably like the granddaddy of most of what we think of
+as like um kind of like in vogue or fashionable in a top-down game
+i think a link to the parts really set the scene for a lot of that stuff so pulling out we've got a lot of more
+modern kind of indie games that use this top-down format obviously stardew valley is one that is very popular that people
+make games in the image of we have games like cadence of hyrule
+which are almost like a sequel to or like an indie take on a sequel to a
+link to the past you know in the same world same sort of palette this is moonlighter more stylized
+flatter this is garden story a much more stylized and flat example as well
+and then moving sort of in this direction we have games like eastwood like we saw last time this is battle axe
+really really interesting very detailed art style here and eldest souls which i think is also
+very gorgeous too i've tried to stick mostly to similar environments here so that we can make
+good comparisons so we're looking mostly today at outside environments grass
+forests that kind of thing one thing that stands out to me as i look at all these screenshots beyond the fact that
+they all share the same perspective is the way they manage contrast and that's what we're going to be talking about today for the most part unlike 2d side
+scrolling games where the character sits at the junction of the ground and the sky and the sky is quite washed out and
+can allow the character to stand out against it top-down games have all of those layers
+compressed and you're looking straight down at them so you know you don't see the sky you see
+the character the ground grass you know out of bounds areas versus areas that you
+can walk on those are all mingling and sharing the same space and so the way that these things are presented visually
+is really important because it's much more important to explain to our eyes visually you know
+what the different parts of the scene are we can't just expect certain regions of
+the scene to mean certain things like we can inside scrolling we have to be able to interpret that by looking at them
+as we scan around the screen so the most obvious point here has to do with grass
+right grass is present in almost all of these this is really obvious in games like a link to the past where the grass
+is essentially one flat color that's uh sort of spiced up with a few different
+sprites here and there in games like this you know you can imagine if we tried to draw every blade
+of grass here even with the the colors that we that we've chosen here which are quite similar to each other if we were
+to fill this entire space with those grass blades it would be harder to tell link
+apart from the ground it would create what we call visual noise so
+areas that we walk on are really obviously areas that we want to be kept clear of focus
+the character of course needs to stand out and in all of these games um using more higher contrast colors is an easy
+way to actually have the character stand out things like outlines tend to be used the same way they do in other games to
+have the character stand out and i would say probably even more so having that black outline is used very commonly in
+this perspective having there be more dense uh details and more saturated colors is also common what's interesting
+in top down games is because of the way the light is often coming from the same place the player is looking from
+it's harder to use light and shadow to make a distinction between things that
+the player can walk on and things that they can't in a platforming game that's really obvious because we can just light the top edges of all the things that we
+want to be able to step on but here you know from the top looking down you know we should be seeing a lot of stuff be
+lit up and not a lot of stuff uh be hidden from the light so these games tend to use
+noise as a way of modulating the difference between things that you can and can't step on and this is part of contrast as
+well so looking at eastwood here you can tell that we can't walk here because of
+just how high contrast and noisy it is right it's kind of like a way of passively telling our brain hey
+this isn't somewhere you can go i think this is something that kind of comes back to nature in a way i mean like it's
+almost the way you think of forests right versus clear paths we want to walk
+in bright open areas we don't really want to walk in noisy areas where it's hard to see predators so just looking at
+these i mean i i think i make the point pretty clearly but if that wasn't enough let's look at an
+example where i would say in battle axes case i think the art here is is incredibly
+high quality it's obvious how well these details are constructed
+and that the colors are beautiful nice to look at but i would say it's quite difficult looking at this frame to
+actually tell the difference between what's environment what's characters
+what's enemies what you can pick up and where you can walk these bounds
+these sort of variances in contrast and in the difference between signal and noise
+aren't really here because everything's detailed and everything is quite saturated
+so what are these principles let's take a look at breaking them down
+The Role of Contrast
+okay so one of the most important principles is modulating contrast and you can see here for things that are
+supposed to be obvious to us like the player objects you can pick up npcs these are all important to us
+right we need them to be signals essentially that we can see on screen at a glance
+and we compare that to things that are of less significance so out of bounds areas and terrain
+high contrast can be used when thinking about these things and for the most part
+all of these things should be able to be found on the terrain so the terrain being below this line has low contrast
+and left of this line being insignificant that's kind of what we want to use for
+our terrain because all of this stuff sits on top of it so it needs to be
+different in contrast on the flip side out of bounds areas they can be high
+contrast because they don't overlap with the terrain and actually the difference in contrast between out of bounds areas
+and the terrain creates the separation in a lot of these cases so a little design principle that
+i came up with here was the idea of separating clear paths versus dense forests those are the two kinds of
+domains that our eyes track against and those serve as the canvas on which our npc's objects players sit on
+i want to take a really quick second to stress the difference here between noise and detail
+signal and contrast okay so noise and signal
+are kind of two lines on a scale that relate to how
+eye-catching something is okay so both this and this
+are not very eye-catching even if this is more detailed
+right the the the non-walkable terrain is detailed there
+are details there but their signal to noise ratio is low because of the amount of contrast used
+the distance between the darkest colors and the brightest colors is very low it's a small distance so our eyes are
+comfortable just glossing over this area even though it's got detail on the flip side looking at this bush here we can
+actually see quite a lot of contrast and our eyes are drawn to it mostly because of the separation between those black
+outlines and the green leaves the way that our eyes work
+essentially our eyes are really great at shape detection and so whenever shapes are closed like
+this that draws our eyes to those areas and especially a cluster of closed shapes
+is very very uh eye-catching to us it's just what our eyes are like designed to stare at so if we zoom out here and look
+at the entire canvas you can kind of see the different parts where your eyes get caught
+on areas where the signal-to-noise ratio changes right so this scarecrow standing in the
+sort of blank field there's a lot of detail in these textures right this is it's quite uh
+noisy this texture but because it's noisy and not very high signal
+it allows something that does have a lot of signal to kind of like stand out to us right we see the scarecrow the closed
+shapes the black outlines and immediately our eyes get drawn to it so now that we've established the role
+of contrast in making a distinction between signal and noise
+how do we explain the difference between these screenshots in terms of their actual aesthetic
+interest you know how do we make things look good or interesting when we have low contrast
+Preserving Interest without Contrast
+so preserving interest when it comes to preserving interest and actually having lots of detail in your
+image without drawing too much attention this comes to the question of how do we
+have differences in color without differences in contrast okay so light can be broken down a few
+different ways oftentimes we talk about rgb for red green and blue those are the channels that we use to actually store
+the data that describes light but in a lot of uh image editing
+software you'll also come across things like brightness hue and saturation to describe colors
+okay and what we can do is we can take one of these axes
+and we can change them slightly just one of them and then detail our image with just that
+slightly different color and what you'll end up with is something that is low contrast but high detail
+so here we've taken this green sort of area of grass and if we just move up
+right into the into like a slightly different brightness we can draw you know a second layer of grass it's still
+very low contrast but it's high detail likewise you know we could instead change the hue we've got yellow tones
+and blue tones here instead again high detail still low contrast right this won't attract your attention
+quite as much as if there was a black shape standing you know in the middle of this
+and finally we could change the saturation so you know we've got more saturated or less saturated greens more
+grays more vibrant colors and uh that's like a very easy way that a lot
+of these games create interesting terrains that need to be low contrast
+but give them lots of nice detail so yeah changing only one or two of these channels very slightly can be enough to
+create that diversity to uh to really fill out your image even if you've established low contrast in an area now
+i can hear you saying but adam if we just change these colors like this what happens to our palette this is a
+really good question i know that i've stressed in the past the importance of a palette and with a lot of my games most
+of my games i do use quite a constrained palette so the danger of actually
+betraying that palette and just having colors go all over the place
+becomes a question and and the threat there is that we lose our sense of style right the consistency goes out the
+window if we just have colors everywhere so how do we preserve a style something
+that feels cohesive when we don't have a palette because we're changing these colors so subtly that's what i want to
+talk about next so a quick kind of like statement that i want to make not necessarily a
+Preserving Style without Palettes
+definition but just a property of style is that style's really about consistency
+in decisions right when we say something is consistent what we're really saying is
+that all of the different decisions that go into determining what that thing is
+follows some sort of pattern that we can follow right that we can we can identify
+and that the times that that pattern is broken are either none or very few times
+okay so it's about consistency in the decisions even if hard limitations like palettes aren't present
+so let's look at stardew valley for a second stardew valley has a lot of colors here
+on screen and a lot of different colors right so even in the green space we've
+got a lot of different greens being used here now you might say oh you know they're
+breaking palette in all these areas but you'd be lying if you said it didn't
+look good because it does look really nice this is partly because it models reality
+right if you go to like a forest like this you see a lot of lush and varied colors of green
+even inside of just like looking at the grass you know different trees different bushes different species of plant all
+have different hues and and even in a single plant you can have lots of different vibrant shades of yellow and
+green so this lush rich use of color is really important in
+actually bringing out what makes stardew valley so so good that aside there are areas i would say in this frame where we
+could criticize and we could say okay where are areas where decisions are inconsistent
+so the first i would say is how brightness is modulated looking at the tower
+that asset from the bottom of the tower to the top of the tower all of the bricks seem to be
+following quite a flat view of color they all have you know light edges on the top and darker parts in the creases
+between the bricks but looking at the top brick and the bottom brick they all have the same sort of base gray but if
+we look at this sort of rock face here the colors at the bottom of the rocks are much much darker in high contrast
+than those at the top so the way that the brightness and contrast are being
+modulated is different in different parts of the same image in ways that should be the same right these are both
+vertical areas that are being elevated and sun would essentially because
+they're all above ground the sun should essentially be hitting them pretty much the same way so i would say this is an area if we go back to the to the
+original this is an area that to me sticks out a little bit a second way looking at the same image would be tone
+okay so this same rock face here if we look at this
+yellow it's almost the same as this kind of clay dirt that's uh just by the edge of the water
+here they're essentially the same because they're all just the dirt that's you know the grass is growing out of
+but if we look down just before we hit the surface of the water we have quite a shift to into like warm
+tones obviously the water makes it cool once we get past that but just here we can see there's like a drift into like a
+warmer orange yet over here as we go down into a more darker space
+instead it becomes a lot cooler and a lot greener sort of like a greeny brown versus a warm brown so whether or not
+either of these are realistic i mean you could make arguments for the warm tone because it's kind of establishing this
+sort of very summery uh nice light effect in the same shot having this kind
+of like very high contrast gray green brown situation is a little bit uh
+conflicting right like why would these colors go in different directions under the same circumstances so again
+not necessary for us to have a palette but it is necessary for us to make similar decisions across the scope of an
+Eastward Example
+image now let's compare that to eastwood eastwood is in my opinion this is like a
+masterpiece when it comes to just the visual composition i think this is like the best example of the set that we
+looked at because it's so easy to tell the difference between
+uh where you can walk and where you can't but there's such a consistency in the rules
+that describe these things okay so let's take a look for a second
+all of these colors here are in the same sort of color space right it's very low contrast overall
+and that makes it seem very stylized because there aren't any places in the image that break this there are no parts
+that are suddenly very bright versus very dark they're all in the same color space all of these colors all of the
+brighter colors are slightly more saturated and slightly warmer and across the image contrast and brightness are
+actually varied based on pathing which is really really interesting what's really brilliant about this is
+the way contrast is being used in a very very subtle elegant algorithmic way
+to actually tell you where you can and can't walk right so navigable areas are very soft very
+similar you can easily just wash your eyes over this and not really see anything but as soon as we get to this
+edge you can see the contrast ratio is a lot higher and the differences in color are a lot
+higher just at that edge right like this yellow and this green next to this
+darker color here those are the most different colors we've seen as we've moved across here so far
+but then as we work back we can see the brightness starts dropping down and the contrast starts cutting away so looking
+at it here it's so impressive how consistent and smooth that transition is
+but how clear it is as a rule right we can see where the rule is introduced and we can see it over the course of these
+sprites fade into something that is less eye-catching but definitely
+less navigable there's almost like a sense of like visual gravity that's kind of like pulling you out of the dark
+areas and towards the softer lighter areas and
+you know this is something that again it's kind of modeling reality in a way but it's also very very clear visual
+communication so shall we have a try putting some of this together let's do it
+Environment Practice Tutorial
+all right so here we are in a sprite and i've just got a reasonably large canvas
+open this one is a new canvas it's 640 by 360 set to indexed
+the reason why i'm using indexed here is so that we can shift colors around as we go because we're going to be building out our own palette here
+Terrain Draft
+all right so i'm just going to like wipe my entire palette i'm going to
+start with a new index and just like come over here to the spectrum and pick a color
+in this case we don't have any reference so i'm definitely going to be changing this but i'm just going to start with something
+so let's delete that and that's a decent green it's not a bad minty kind of green if we
+want to go for something like more washed out or pastel i'm not really sure what i want to do with this yet so
+we're just going to start copying this color out and then maybe like
+shifting it right and i'm going to i'm just going to do what i usually do which is shift down
+and towards a little more blue as we go down and a little less saturated but i'm
+going to be very very subtle with this so you can see it's almost impossible to tell the difference between those two
+colors but this is going to be walkable terrain so we're just gonna create like a nice
+maybe like a kind of like a t intersection of uh walkable terrain so i'm gonna make some
+colors now that match this palette uh and i'm gonna build them around this minty green so maybe we'll take another
+color here and we're going to take the same thing but we're going to shift it kind of like
+up a little maybe this color can be like the dirt
+underneath nice cool so here we can do some you know patches where the grass didn't
+quite make it and our goal is really to to minimize the amount of draw that this has on the
+eye we're really just having very very minimal impact on on the vision here we want it to be
+you know different enough that we can see some difference but uh not so different that it catches
+our eye now i'm going to take this green and create a bit of a like a highlight color
+maybe one that's got some more yellow in it and it's a bit stronger we'll add that to the palette as well
+i'm going to use this as our uh like highlight on any blades of grass that we
+have sticking up i think we probably want to go a bit more green here and then we can
+underscore those with some shadow and that creates a nice
+very very soft bit of detail there
+cool so we've already started with very very simple very soft yet different details just by
+changing saturation a little bit a little bit of hue slight amounts of brightness here and there
+and already we've got you know three or four different colors that we can use to create some unique shapes and
+interesting details that don't pull focus um you know we'll still be able to look
+at this and know where the player is supposed to be walking now i want to take this dirt collar and i want to do
+like a shadow version of that so that we can create some depth between the grass and the dirt
+so i'm going to lock this off again go down slightly
+from this color here just drift down and then add that to the palette so i'm going to take this color here that's
+like slightly darker and maybe we can start
+using the shade brush to create a bit of a distinction between these two so i'm going to take my two colors
+go into this press shading and then start drawing underneath here right on
+the top edge because that's where the shadow is going to be visible now immediately i know this isn't going
+to be quite right and part of this is the depth part of it is the color but if we unlock this and then just start
+shifting down again we can actually start working in where we want to go and i think yes desaturating
+much much more helps us out quite a lot there actually okay so we can take these two colors and just wear them back now
+we want to be very subtle maybe even more subtle than this maybe we could go even closer it's just enough
+to draw some distinction and then we can do things like add little cracks and extra details here if we want
+and just finding shapes here that work really i'm not really trying to force too much
+just doing a little bit of exploring it's nice to fill in the edges
+usually rather than the center the center keeping it nice and open gives us a bit more
+space now for this to really make sense um to
+actually explain the differences between these two colors here we want some objects above
+the uh above the terrain maybe some trees stuff like that and i'm going to
+lock this off gonna take this color here and then shift it way down let's create like a lot of contrast
+and add that color and then see if we can just draw some some shapes here that really create that distinction
+now i want to play with the idea of there being shapes
+first and then we can work in the details of what those shapes are but really i'm just talking
+about like okay how do i want this you know this edge to look this is obviously not
+you know game assets this is just like a picture it's just a mock-up so we can really do whatever we want here
+and again my goal at the moment is just to just to find the right colors so i think i want it to go a lot darker
+maybe oh that sort of blue is nice yes i like that quite a lot let's lock it
+off again find an even darker tint and then we can paint that in as well
+so i'm going to start just filtering in the idea of there being sort of like trees
+and i'm sort of trying to create you know i'm thinking in my mind that the trees are kind of like this
+right maybe even a little more top down like this so that we can get more of a perspective on them
+yeah maybe maybe closer to this and that's just what i'm doing as i'm
+filling in these shapes here you can see this if you complete that shape you know that's kind of where that's going
+essentially but i'm using a big brush here because i don't really know yet what i want to do
+with this so there's no point going in here with a single pixel brush and defining details
+when we don't actually know what the overall shape is going to be and that's kind of the the motto of doing this kind of
+mock-up work you're not creating assets yet i mean you might like some of these things might become assets and if i'm
+going to do some sort of tiled trees like set up here you know i might take one of these zones and turn it into an
+asset but right now all i'm trying to do is get the feel right so i don't really know exactly like
+what i want out of all of this so there's no point going for
+quality when i can go for quantity right it's really about the volume of the space
+then the exact details of what's going on at least at this stage later on we'll add some details and that's kind of what
+i'm doing here really i'm just thinking about okay what do these edge shapes look like as we work our way over here
+and then now we can start coming back down here and following this this line a little bit more
+and now that we've got some sense of shadow something that's actually casting this darker shade now it makes a bit
+more sense what it's there for so at the moment i'm just sort of tearing in a little bit into this space
+just to create more of those shapes just to feel it out a little bit and what i'm really looking at is the contrast
+between this space and this space and where i want this to be
+pulling focus and where i want it to not be pulling focus so most of the contrast when this is all
+done will be here at this line and then i want to wear that back so there's much less at the end
+so i'm sort of thinking about this as a gradient of contrast and detail so there's going to be more noise you know
+more shapes here at the edge of the tree where the light meets the shadow right and it
+doesn't really matter at this stage what those shapes are just sort of blotting them down there's going to be
+light and darkness all over the place but you can kind of see what i'm going for here right where they're just
+becoming more sparse and less obvious less eye-catching as we work
+back maybe this is an opportunity for a slightly different tone so i'm really liking where this is going
+Terrain Details
+um if this is looking a little strange right it's because we need to work in these edge details so
+if you take the grass shapes and start plotting them up through this you'll start having it feel more like it's a it's a
+change in the grass rather than just some random you know
+brown splotch so like this you can even maybe work it back a little bit
+and you could start also fanning it out by uh having like the different shades sort
+of cross over in little bits here and there and it might be nice to just work in some of these extra details
+just little highlight bits and darker bits just little bits of variance
+having the colors be shared like that helps it be more consistent so so even though we're picking these colors kind
+of at will we are still up obeying the kind of logic of a palette and we're trying to reuse colors
+where we can so we could probably take some of these details and just import them
+over here maybe we'll just be a bit more careful with that you can start seeing now the traces of
+like an asset being created right like these details being repeated this really
+does feel quite quite close now to like an actual game screenshot i think we could go a little bluer with
+these colors i'm just going to shift them ever so slightly over
+and it might be a cool idea to put a building here i'm thinking maybe like a house
+Buildings
+of some sort and i want to try to start with a color that i've already used and i still don't really know what the shape
+of the house is yet or anything like that so i'm going to try and just create something
+and not get again not be too picky about any of these decisions that we're making
+get some perspective on here i can kind of think of this as i really like
+kind of tudor style houses i do a lot of fantasy stuff so i'm going to see if i can create
+something that's kind of fantasy
+so let's go for maybe like
+another few other colors here i'm just going to start picking them up a bit and then placing them down and then
+seeing if i can work them to where i need them to be that's not bad
+see if we can find the back edge as well some level of depth here on the front
+and then instead of this color i think i want to go for something a lot more generally just eggshell
+and i'm actually kind of feeling this could be a bit bigger this building maybe we double it have the same detail on the back side
+this kind of reminds me of the like vermillion city gym
+or viridian viridian city jimin pokemon blue it kind of reminds me of giovanni's gym
+cool now as i look at this this feels much much more saturated than this so i might take like all of these
+colors and up the saturation so i'll take all of them like this just grabbing all of
+them gonna go edit adjustments hue saturation and just see if we can play
+with the saturation just bump it up until it fits i think even that is a lot better if we
+go all the way it's too much but that's where we were
+that's feeling a lot better it doesn't need to be much brighter or darker i think that the
+brightness is fine but i think bumping the saturation up is the way to go there
+yeah that's pretty good and i'd like to add a color as well to this that's kind of like a tile
+highlight you know just like the top edge of some of these roof tiles
+just to give it that specular look
+right where the light is catching it
+and these details help to really tell the difference between like something that's a solid that we can't
+walk on and something that we can walk on right all of the saturation and the contrast between these colors here is
+very close together these colors very sharp very rigid so that we know
+because of the difference between these two colors there's something happening here and it's not this very smooth transition
+it's not somewhere we can just walk freely so then i would just consider like what these roof tiles look like
+this might be a little too noisy at this point maybe we're pulling too much focus that looks like it's going to make a nice texture there as well too having
+these run along and i probably wouldn't go crazy i
+wouldn't like put the same shape all the way up but just hinting at it here kind of
+gives us a nice uh a nice start and if we can kind of work it into some of these shapes here if we
+can you know indicate that there is a texture in the points where
+elements meet then we don't have to tile the entire space
+now i want to make quite a distinction here between rooms that we can enter and ones that we can't or at least like
+places that are doors and doors and top-down games tend to be very dark right very dark shadows
+so that's what we're going for and i just want to go a little darker
+right here on the doorstep and in fact maybe all the way around the building if it's casting a bit of a
+shadow so i'm just going to go to the layer below take this color and then go to the
+next darker shade and put that all the way around and this might be time for another color i really
+like the idea of almost outlining it with the really hard shadow
+but i just i think we need to be a bit more definite as well with our shapes and what we're doing with them and honestly i don't really
+know if you would see this shadow like this but it's kind of interesting to look at so i'll keep it there
+it feels it feels kind of right now of course again because it's a shadow it's going to have these grass
+shapes blending the parts where the shadows meet because underlying through all of this is grass
+right so even here you would see grass kind of adding some noise to these shadows
+it's a bit tedious but you get the you get the idea i think i would probably add another
+shade to this just to separate this a bit more i feel like the the shade we've got these two
+colors are very close together we could just go a bit darker now what i'd like to do is see if i
+could bring this set of trees over into this space right now they're very it's very
+freestanding it feels like it's its own thing but if we can bring the trees up into it then i think it'll be perfect
+so let's put it on top of the trees just to create some shapes for context shadows are an excellent way of
+grounding your objects into the scene once you cast a shadow from something suddenly it
+feels like it's there otherwise it kind of floats it's a bit bit strange to look at
+now of course i would never make a game like this i wouldn't just sit here and especially an rpg and just draw shapes
+for every screen in the game you would want to create assets out of this stuff so you know rest assured
+after doing a mock-up like this you could take some of these elements and turn them into assets you break them down into pieces and start making tiles
+out of them stuff like that what other things can we do to kind of create some more interest in
+this scene we could probably add something like a road in here you know it wouldn't be out of the question to have like a footpath
+coming from these buildings like this
+that's actually not so bad you know what i'm going to do that and we'll see if we can just make this
+without ruining any of the detail we created
+nice okay i'm really happy with where this is
+Tree Texture Details
+right now i think from here the only thing i really want to show you as far as like sending you on your way
+on this intro is just getting some detail on some of these trees i won't do the whole thing because it's going to take ages but
+just to show you what that might look like essentially it is a texture so it's going to be trying to create some
+repeating shapes that indicate you know the clusters of of leaves that
+the trees are made up of and we want to use some nice interesting contrast with the colors and
+we want to be able to repeat those textures while changing the colors into something that's lower contrast and
+more homogeneous as we move to the to the edge we've done trees like this before in the
+alpine parallax tutorial that i gave so you should be familiar if you follow my
+tutorials i'm a little concerned here about the fact that these are so similar to the color next to them but
+we might be able to to do something here we'll see what happens i want to really shade the tops of these
+trees more than the bottoms i think we want to go into a different color space i think it's too similar i
+would like to go towards something more blue and just to break down my thought process on this essentially i've got
+like let's just say we've got our shape that looks like this right this is like the the overall shape
+that we've got for the for the top and then every shape beneath that is kind of like
+a flick like this duplicated a few times okay and that's like a layer and these
+trees have a few layers okay so let's just pretend these are some details in our tree
+at the top i want to see these shapes inside of this so i can take this and start working
+them in and then if i want to go even further these shapes would probably have little
+kind of like details at the very edge where they're catching the light a bit more
+so i could do the same thing internally inside of this but one step up
+so we could call this the body right of the of like
+a frond so the body color here is the same as this and then the highlight color
+is one step up but in this one the body color is the stepped up version and the highlight is
+even higher okay and that lets you layer them see and now
+we've actually created one two three layers of the same pattern but
+with three different color steps right we've descended down
+we've descended down the space over the course of those three steps so that's kind of what i'm going for here
+is applying the same logic but stepping it down as i go
+and maybe for the sake of argument
+we'll just see if we can do like the bottom of these trees
+i'd like to just touch on that
+so i'm just going to take this timber color and see if we can work it in at the bottom of these trees
+and i could see us going a lot darker with this honestly i could probably take this
+color and just drop it down another notch maybe shift it towards blue
+oh that purple is kind of nice that's not so bad though that's okay
+cool not a bad start this definitely needs like a ton more detail you know across
+all of the areas you know these trees are nothing yet they're all just a big big
+mess but you can see kind of what i'm going for here i hope
+much better so i think this would be the shape that i would sort of work with
+from here just take this and see if i can like copy it and paste it and move it around
+and replicate it around the map you sort of have to go
+from the top down if you're just going to be copying and pasting so for the sake of this lovely tutorial i'm just going to be copying and pasting this
+shape just to give you an idea of what it might look like if we're closer to being
+finished uh i want to replace all the colors down essentially
+and just knock out all the highlights so they're flatter right there's less
+range now because we've just taken away all the highlights which means now this front edge of trees
+is a lot more standout than any one that we put behind it so i think we'll leave it there
+Outro
+otherwise we'll be here all day and tomorrow as well i hope that you learned something and i hope that you have a bit
+more confidence now moving into the start of your own top-down journey i will probably elaborate on this in the
+future doing things like uh character animations or objects things like that
+and uh yeah that's about it for this tutorial if you enjoyed what you saw today please consider subscribing
+and uh until next time hey pal thanks for watching and thanks most especially to the patrons and
+twitch subs who support this channel and my gamedev project insignia to find out more click the links in the description
+below and uh if you like this video tell youtube by clicking the like button and then youtube will tell me and then i'll
+make more videos that's nice thanks again and until next time
