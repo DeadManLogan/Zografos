@@ -1,0 +1,6 @@
+references/style_references/romain-courtois-x-x.jpg: I like the realistic note of the image, for example how realistic the cafe building is and how simple yet beautiful the flora. I also love the silouettes of the characters.
+references\style_references\romain-courtois-x-reso-x4.jpg: I like again the realistic style and character silouettes. But even though it's from same artist, I don't like how crispy the building and the trees look to the background. Could be a palette issue or contrast? I cannot explain it, but it seems too hard on my eye.
+references\style_references\philipp-a-urlich-tree-scene-serene-1.jpg: Here I like the palette, how real and alive the landscape looks. I love the trees and I love the fact that the biggest tree (closes to us) looks highlighted and more important than the rest.
+references\style_references\sea_birds.png: I like the model of the birds, looks very realistic and alive. I do not like the palette and contrast of the background.
+references\style_references\panda.gif: I like the animation of the panda and the explanation of it.
+references\style_references\mendacious_visage.png: I like the fantasy behind it. This monster is combining many characteristing of different entities and i like it.

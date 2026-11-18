@@ -43,5 +43,7 @@ luac.out
 # Sprite review images
 previews/
 
-# Image References
-/references
+# Image References: ignore the images (other artists' work), keep our .md notes
+/references/**
+!/references/**/
+!/references/**/*.md
